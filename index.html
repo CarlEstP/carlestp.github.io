@@ -53,14 +53,12 @@
   <body>
     <header role="banner">
       <nav role="navigation">
-         <p style="float: left; font-weight: bold;">
-          <a style='color: #111;
-    font-size: 2em;' href="#slide=1">CarEstP</a>
-        </p>
+         <p class="logo"><a style="background:url('') no-repeat 0 0; text-indent: 0px; color: #111;
+    font-size: 2em;" href="index.html#slide=1" title="CarlEstP">CarlEstP</a></p>
           <ul>
             <li style='display: inline-flex'>
-              <a href="#slide=2">About me</a>
-              <a href="#slide=3">My Projects</a>
+              <a style='border-right: 1px solid #000;' href="#slide=2">About me</a>
+              <a style='border-right: 1px solid #000;' href="#slide=3">My Projects</a>
               <a href="#slide=4">Contact</a>
             </li>
           </ul>
@@ -80,12 +78,21 @@
         <section id="slide=1">
          <span class="background" style="background-image:url('')"></span>
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap aligncenter">
-            <h1><strong></strong></h1>
-            <p class="text-intro">Accomplished IT professional with a robust background in<br></p>
-            <p>Data analytics, </p>
-            <p>Web development and</p>
-            <p>Computer engineering</p>
+          <div class="wrap size-50 aligncenter">
+            <div class="grid vertical-align">
+
+              <div class="column">
+                  <img style='border-radius: 215px; max-width: 300px; margin: 0px auto;' src="perfil.PNG"></img>
+              </div>
+
+              <div class="column" style="font-size:1.2em">
+                <h1><strong></strong></h1>
+                <p class="text-intro"><strong>Accomplished IT professional with a robust background in:</strong><br></p>
+                <p><i>Data analytics</i></p>
+                <p><i>Web development</i></p>
+                <p><i>Computer engineering</i></p>
+              </div>
+            </div>
 
           </div>
           <!-- .end .wrap -->
@@ -93,23 +100,21 @@
 
         <section id="slide=2">
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-50 aligncenter">
-            <h2><strong>About me</strong></h2><hr>
+          <div class="wrap size-75 aligncenter">
+            <h2 style="text-align:left"><strong>About me</strong></h2><hr>
             <div class="bg-white shadow">
-              <ul class="flexblock reasons">
-                <li>
-                  <h2>Education</h2>
-                  <p>...</p>
-                </li>
-                <li>
-                  <h2>Experience</h2>
-                  <p>...</p>
-                </li>
-                <li>
-                  <h2>Skills and competences</h2>
-                  <p>...</p>
-                </li>
-              </ul>
+              <pre style="margin-bottom: 40px;">
+                <h4 style="text-align: center;">Education</h4>
+                <p>fsdfsdfsdfsfsf</p>
+              </pre>
+              <pre style="margin-bottom: 40px;">
+                <h4 style="text-align: center;">Experience</h4>
+                <p>fsdfsdfsdfsfsf</p>
+              </pre>
+              <pre>
+                <h4 style="text-align: center;">Skills</h4>
+                <p>fsdfsdfsdfsfsf</p>
+              </pre>
             </div>
           </div>
         </section>
