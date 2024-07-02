@@ -6,16 +6,12 @@
     <title>My portfolio</title>
     <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
 
-    <!-- URL CANONICAL -->
-    <!-- <link rel="canonical" href="http://your-url.com/"> -->
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
 
-    <!-- CSS WebSlides -->
     <link rel="stylesheet" type='text/css' media='all' href="webslides.css">
 
-    <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type='text/css' media='all' href="svg-icons.css">
 
     <!-- SOCIAL CARDS (ADD YOUR INFO) -->
@@ -50,48 +46,231 @@
     <meta name="theme-color" content="#333333">
 
   </head>
-  <body>
+
+  <style>
+
+.project-grid { 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+
+.project-grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.project-grid > article img {
+  max-width: 100%;
+  max-height: 336px;
+}
+.project-grid .text {
+  padding: 0 20px 20px;
+}
+.project-grid .text > button {
+  background: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  }
+
+  .social-media img{
+  width: 60px;
+  margin: 10px;
+}
+
+
+#main-menu{
+  display: block;
+}
+
+#mobile-menu{
+  display: none;
+}
+
+#mobile-menu-icon:hover{
+cursor: pointer;
+}
+
+
+@media (max-width: 1440px) {
+
+#main-menu{
+  display: none;
+}
+
+#mobile-menu{
+  display: block;
+}
+
+#mobile-menu-icon{
+  float: none;
+  display: block;
+  text-align: center;
+}
+
+
+#mobile-menu-items{
+  display: none;
+  float: none;
+  margin: 10px;
+  background-color: bisque;
+  border: 1px solid #000;
+  border-radius: 0px;
+}
+
+#mobile-menu-items li a {
+  background: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+#mobile-menu-items li a:hover {
+  background: #eee;
+
+}
+
+
+}
+@media (max-width: 568px) {
+
+/* .perfil{
+    margin: 0px auto;
+    width: 300px;
+  } */
+
+html nav{
+  font-size: 0.6em;
+}
+
+.logo a {
+  float: initial;
+  margin: 10px auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  padding: 0 0 20px 0;
+}
+
+header nav ul {
+    justify-content: center;
+}
+
+#mobile-menu-icon{
+  float: none;
+  margin: 10px;
+}
+
+#section-1, #section-2, #section-3, #section-4{
+  font-size: 0.6em;
+}
+
+.shadow pre{
+  margin: 10px;
+  padding: 0px 10px;
+}
+
+.shadow pre h4{
+  font-size: 0.5em;
+}
+
+.shadow p {
+  padding: 0;
+  margin: 0;
+}
+
+}
+
+</style>
+
+  
+<script>
+function toggleMenu() {
+  var menuItems = document.getElementById('mobile-menu-items');  
+  // var menuIcon = document.getElementById('mobile-menu-icon');  
+
+  if(menuItems.style.display == "grid") 
+  {
+    menuItems.style.display = "none";
+    // menuIcon.style.display = "block";
+  }
+  else 
+  {
+    menuItems.style.display = "grid";
+    // menuIcon.style.display = "none";
+  }
+}
+
+</script>
+
+
+<body>
     <header role="banner">
-      <nav role="navigation">
+      <nav role="navigation" id="main-menu">
          <p class="logo"><a style="background:url('') no-repeat 0 0; text-indent: 0px; color: #111;
-    font-size: 2em;" href="index.html#slide=1" title="CarlEstP">CarlEstP</a></p>
+    font-size: 3em;     text-transform: none;" href="index.html#slide=1" title="CarlEstP"><strong>CarlEstP</strong></a></p>
           <ul>
             <li style='display: inline-flex'>
-              <a style='border-right: 1px solid #000;' href="#slide=2">About me</a>
-              <a style='border-right: 1px solid #000;' href="#slide=3">My Projects</a>
-              <a href="#slide=4">Contact</a>
+              <a href="#slide=2">Education</a>
+              <a href="#slide=3">Experience</a>
+              <a href="#slide=4">Skills & Competences</a>
+              <a href="#slide=5">My Projects</a>
+              <a href="#slide=6">Contact</a>
             </li>
           </ul>
-          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
         </ul>
       </nav>
+
+      <nav role="navigation" id="mobile-menu">
+        <p class="logo"><a style="background:url('') no-repeat 0 0; text-indent: 0px; color: #111; font-size: 3em; text-transform: none;" 
+          href="index.html#slide=1" title="CarlEstP">CarlEstP</a></p>
+
+          <a id='mobile-menu-icon'  onclick="toggleMenu()" ><img src='mobile-img.jpg' style="width: 50px; height: 50px;"></a>
+        
+        <div style="position: fixed; top: 0; right: 0; padding: 10px;">
+          <ul id="mobile-menu-items">
+            <li><a href="#slide=2">Education</a></li>
+            <li><a href="#slide=3">Experience</a></li>
+            <li><a href="#slide=4">Skills</a></li>
+            <li><a href="#slide=5">My Projects</a></li>
+            <li><a href="#slide=6">Contact me</a></li>
+
+          </ul>
+        </div>
+     </nav>
     </header>
 
     <main role="main">
       <article id="webslides" class="vertical">
-        <!-- Quick Guide
-          - Each parent <section> in the <article id="webslides"> element is an individual slide.
-          - Vertical sliding = <article id="webslides" class="vertical">
-          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-        -->
-
         <section id="slide=1">
-         <span class="background" style="background-image:url('')"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-50 aligncenter">
+         <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+          <div class="wrap size-70 aligncenter">
+            <div class="bg-white shadow" style="border-radius: 100px;">
+
             <div class="grid vertical-align">
 
-              <div class="column">
-                  <img style='border-radius: 215px; max-width: 300px; margin: 0px auto;' src="perfil.png"></img>
+                <div class="column">
+                  <div class='perfil'>
+                    <img style='border-radius: 200px; width: 400px;' src="perfil.png"></img>
+                  </div>
               </div>
-
-              <div class="column" style="font-size:1.2em">
-                <h1><strong></strong></h1>
-                <p class="text-intro"><strong>Accomplished IT professional with a robust background in:</strong><br></p>
+              <div class="column" style="font-size:2em">
+                <p class="text-intro" style="font-size: 0.8em; line-height: 1.5em;"><strong>Accomplished IT professional with a robust background in:</strong><br></p>
                 <p><i>Data analytics</i></p>
                 <p><i>Web development</i></p>
                 <p><i>Computer engineering</i></p>
               </div>
+              </div>
+              </div>
+
+
             </div>
 
           </div>
@@ -99,20 +278,16 @@
         </section>
 
         <section id="slide=2">
+          <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-75 aligncenter">
-            <h2 style="text-align:left"><strong>About me</strong></h2><hr>
+          <div class="wrap size-80 aligncenter">
+            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>About me - Education</strong></h4><hr>
             <div class="bg-white shadow">
               <pre style="margin-bottom: 40px;">
-                <h4 style="text-align: center;">Education</h4>
                 <p>fsdfsdfsdfsfsf</p>
-              </pre>
-              <pre style="margin-bottom: 40px;">
-                <h4 style="text-align: center;">Experience</h4>
                 <p>fsdfsdfsdfsfsf</p>
-              </pre>
-              <pre>
-                <h4 style="text-align: center;">Skills</h4>
+                <p>fsdfsdfsdfsfsf</p>
                 <p>fsdfsdfsdfsfsf</p>
               </pre>
             </div>
@@ -120,50 +295,85 @@
         </section>
 
         <section id="slide=3">
-          <div class="wrap">
-            <h2><strong>My projects</strong></h2>
-            <ul class="flexblock gallery">
-              <li>
-                <a href="demos/why-webslides.html" title="Why WebSlides?">
-                  <figure>
-                    <img alt="Thumbnail Why WebSlides?" src="https://webslides.tv/static/images/demos-why.png">
-                    <figcaption>
-                      <h2>Project 1</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="demos/landings.html" title="Landings">
-                  <figure>
-                    <img alt="Thumbnail Landings" src="https://webslides.tv/static/images/demos-landings.png">
-                    <figcaption>
-                      <h2>Project 2</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="demos/portfolios.html" title="Portfolios">
-                  <figure>
-                    <img alt="Thumbnail Portfolios" src="https://webslides.tv/static/images/demos-portfolios.png">
-                    <figcaption>
-                      <h2>Project 3</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-            </ul>
+          <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-80 aligncenter">
+            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>About me - Experience</strong></h4><hr>
+            <div class="bg-white shadow">
+              <pre style="margin-bottom: 40px;">
+                <p>fsdfsdfsdfsfsf</p>
+                <p>fsdfsdfsdfsfsf</p>
+                <p>fsdfsdfsdfsfsf</p>
+                <p>fsdfsdfsdfsfsf</p>
+              </pre>
+            </div>
           </div>
         </section>
 
         <section id="slide=4">
+          <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-80 aligncenter">
+            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>About me - Skills and competences</strong></h4><hr>
+            <div class="bg-white shadow">
+              <pre style="margin-bottom: 40px;">
+                <p>fsdfsdfsdfsfsf</p>
+                <p>fsdfsdfsdfsfsf</p>
+                <p>fsdfsdfsdfsfsf</p>
+                <p>fsdfsdfsdfsfsf</p>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <section id="slide=5">
+          <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+
+          <div class="wrap size-80 aligncenter">
+            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>My projects</strong></h4><hr>
+            <div class="project-grid">
+              <article>
+                <img src="bank.png" alt="Sample photo">
+                <div class="text">
+                  <h3>Bank case study</h3>
+                  <p>Completo análisis de diferentes campañas de marqueting de un banco portugués para determinar si el producto (depósito a plazo bancario) sería suscrito o no</p>
+                  <button>Here's why</button>
+                </div>
+              </article>
+              <article>
+                <img src="inquilino.png" alt="Sample photo">
+                <div class="text">
+                  <h3>El inquilino ideal</h3>
+                  <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+                  <button>Here's how</button>
+                </div>
+              </article>
+              <article>
+                <img src="attendance.png" alt="Sample photo">
+                <div class="text">
+                  <h3>Work attendance & environment </h3>
+                  <p>Completely synergize resource taxing relationships via premier niche markets.</p>
+                  <button>Read more</button>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="slide=6">
+         <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
           <div class="wrap">
-            <div class="content-right text-serif">
-              <h2>
-                <strong>Contact me</strong>
-              </h2>
-              <p></p>
+            <div class="content-center text-serif">
+              <div class="bg-white shadow">
+              <h4><strong style="text-align:center; margin: 10px 0;">Contact me:</strong><hr></h4>
+              <div class="social-media">
+                <a href="https://linkedin.com/in/carlos-estepa-perez" target='_blank'><img src="linkedin-icon.webp" ></a>
+                <a href="mailto:carlos.estepa84@gmail.com" target='_blank'><img src="mail-icon.png" ></a>
+                <a href="https://github.com/CarlEstP" target='_blank'><img src="github-icon.webp"></a>
+              </div>
             </div>
           </div>
         </section>
