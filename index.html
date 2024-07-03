@@ -49,6 +49,11 @@
 
   <style>
 
+
+nav[role='navigation'] li a {
+    background-color: blanchedalmond;
+}
+
 .project-grid { 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -59,7 +64,9 @@
 .project-grid > article {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  background: #fff;
 }
+
 .project-grid > article img {
   max-width: 100%;
   max-height: 336px;
@@ -122,9 +129,10 @@ cursor: pointer;
   display: none;
   float: none;
   margin: 10px;
-  background-color: bisque;
-  border: 1px solid #000;
-  border-radius: 0px;
+  background-color: blanchedalmond;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
 }
 
 #mobile-menu-items li a {
@@ -134,6 +142,16 @@ cursor: pointer;
     border-radius: 0px;
     margin: 0;
     padding: 0;
+}
+
+#mobile-menu-items li:first-child > a {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px
+}
+
+#mobile-menu-items li:last-child > a {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px
 }
 
 #mobile-menu-items li a:hover {
@@ -183,10 +201,18 @@ header nav ul {
   margin: 10px 0 0 20px;
 }
 
-#slide-one-container{
+#slide-one-container,
+#slide-two-container,
+#slide-three-container,
+#slide-four-container,
+#slide-five-container,
+#slide-six-container{
   margin-top: 100px;
 }
 
+#slide-five-container{
+  margin-top: 150px;
+}
 
 #section-1, #section-2, #section-3, #section-4{
   font-size: 0.6em;
@@ -205,6 +231,11 @@ header nav ul {
   padding: 0;
   margin: 0;
 }
+
+.project-grid{
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
 
 }
 
@@ -270,7 +301,7 @@ function toggleMenu() {
     <main role="main">
       <article id="webslides" class="vertical">
         <section id="slide=1">
-         <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+         <span class="background" style="background-image:url('wallpaper7.webp'); opacity: 0.2;"></span>
           <div class="wrap size-70 aligncenter">
             <div id='slide-one-container' class="bg-white shadow" style="border-radius: 100px;" >
 
@@ -282,7 +313,9 @@ function toggleMenu() {
                   </div>
               </div>
               <div class="column" style="font-size:2em">
-                <p class="text-intro" style="font-size: 0.8em; line-height: 1.5em;"><strong>Accomplished IT professional with a robust background in:</strong><br><br></p>
+                <p style="font-size: 0.6em; line-height: 1.5em;">Passionated for learning and applying new technologies that are constantly emerging and evolving. 
+                <p style="font-size: 0.6em; line-height: 1.5em;">Highly motivated to face new challenges and responsibilities. </p>
+                <p style="font-size: 0.6em; line-height: 1.5em;">Currently, I am redirecting my professional career towards the Data Science and Analytics sector.</p><br>
                 <p><i>Data analytics</i></p>
                 <p><i>Web development</i></p>
                 <p><i>Computer engineering</i></p>
@@ -298,11 +331,11 @@ function toggleMenu() {
         </section>
 
         <section id="slide=2">
-          <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+          <span class="background" style="background-image:url('wallpaper7.webp'); opacity: 0.2;"></span>
 
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-80 aligncenter">
-            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>About me - Education</strong></h4><hr>
+          <div id='slide-two-container' class="wrap size-80 aligncenter">
+            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>Education</strong></h4><hr>
             <div class="bg-white shadow">
               <pre style="margin-bottom: 40px;">
                 <p>fsdfsdfsdfsfsf</p>
@@ -315,11 +348,11 @@ function toggleMenu() {
         </section>
 
         <section id="slide=3">
-          <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+          <span class="background" style="background-image:url('wallpaper7.webp'); opacity: 0.2;"></span>
 
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-80 aligncenter">
-            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>About me - Experience</strong></h4><hr>
+          <div id='slide-three-container' class="wrap size-80 aligncenter">
+            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>Experience</strong></h4><hr>
             <div class="bg-white shadow">
               <pre style="margin-bottom: 40px;">
                 <p>fsdfsdfsdfsfsf</p>
@@ -332,11 +365,11 @@ function toggleMenu() {
         </section>
 
         <section id="slide=4">
-          <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+          <span class="background" style="background-image:url('wallpaper7.webp'); opacity: 0.2;"></span>
 
           <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-80 aligncenter">
-            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>About me - Skills and competences</strong></h4><hr>
+          <div id='slide-four-container' class="wrap size-80 aligncenter">
+            <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>Skills and competences</strong></h4><hr>
             <div class="bg-white shadow">
               <pre style="margin-bottom: 40px;">
                 <p>fsdfsdfsdfsfsf</p>
@@ -349,33 +382,33 @@ function toggleMenu() {
         </section>
 
         <section id="slide=5">
-          <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+          <span class="background" style="background-image:url('wallpaper7.webp'); opacity: 0.2;"></span>
 
-          <div class="wrap size-80 aligncenter">
+          <div id='slide-five-container' class="wrap size-80 aligncenter">
             <h4 style="text-align:center; font-weight: 100; margin: 10px 0;"><strong>My projects</strong></h4><hr>
             <div class="project-grid">
               <article>
                 <img src="bank.PNG" alt="Sample photo">
                 <div class="text">
                   <h3>Bank case study</h3>
-                  <p>Completo análisis de diferentes campañas de marqueting de un banco portugués para determinar si el producto (depósito a plazo bancario) sería suscrito o no</p>
-                  <button>Here's why</button>
+                  <p>Complete analysis about different campaigns from a portuguese bank to check if an specific product (long term ) was subscribed or not.</p>
+                  <button>More details</button>
                 </div>
               </article>
               <article>
                 <img src="inquilino.PNG" alt="Sample photo">
                 <div class="text">
                   <h3>El inquilino ideal</h3>
-                  <p>Dramatically engage seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
-                  <button>Here's how</button>
+                  <p>App web that use machine learning to try to find your ideal room mate that fits better with your personal preferences</p>
+                  <button>More details</button>
                 </div>
               </article>
               <article>
                 <img src="attendance.PNG" alt="Sample photo">
                 <div class="text">
                   <h3>Work attendance & environment </h3>
-                  <p>Completely synergize resource taxing relationships via premier niche markets.</p>
-                  <button>Read more</button>
+                  <p>Analyse a dataset from a IT company to find out the employees working preferences (work from home or office) and their attendance</p>
+                  <button>More details</button>
                 </div>
               </article>
             </div>
@@ -384,10 +417,10 @@ function toggleMenu() {
         </section>
 
         <section id="slide=6">
-         <span class="background" style="background-image:url('wallpaper5.jpg'); opacity: 0.2;"></span>
+         <span class="background" style="background-image:url('wallpaper7.webp'); opacity: 0.2;"></span>
           <div class="wrap">
             <div class="content-center text-serif">
-              <div class="bg-white shadow">
+              <div id='slide-six-container' class="bg-white shadow">
               <h4><strong style="text-align:center; margin: 10px 0;">Contact me:</strong><hr></h4>
               <div class="social-media">
                 <a href="https://linkedin.com/in/carlos-estepa-perez" target='_blank'><img src="linkedin-icon.webp" ></a>
