@@ -73,6 +73,7 @@ nav[role='navigation'] li a {
   padding: 0;
   line-height: 0;
   font-size: 1em;
+  font-family: 'Roboto';
 }
 
 
@@ -89,6 +90,7 @@ nav[role='navigation'] li a {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 20px;
   align-items: stretch;
+  font-size: 1em;
   }
 
 .project-grid > article {
@@ -227,7 +229,7 @@ header nav ul {
 }
 
 #mobile-menu-items li a {
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px;
 }
 
@@ -280,6 +282,7 @@ header nav ul {
 
 .project-grid{
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  font-size: 0.8em;
 }
 
 .aboutme-data{
@@ -353,7 +356,7 @@ function toggleMenu() {
         <section id="slide=1">
          <span class="background" style="background-image:url('wallpaper8.png'); opacity: 0.2;"></span>
           <div class="wrap size-70 aligncenter">
-            <div id='slide-one-container' class="bg-white shadow" style="border-radius: 100px;" >
+            <div id='slide-one-container' class="bg-white shadow" style="border-radius: 100px; padding: 0px;" >
 
             <div class="grid vertical-align">
 
@@ -414,14 +417,26 @@ function toggleMenu() {
 
           <!--.wrap = container (width: 90%) -->
           <div id='slide-three-container' class="wrap size-80 aligncenter">
-            <h4>Experience</h4><hr>
+            <h4><b>Experience</b></h4><hr>
             <div class="bg-white shadow">
-              <pre style="margin-bottom: 40px;">
-                <p>fsdfsdfsdfsfsf</p>
-                <p>fsdfsdfsdfsfsf</p>
-                <p>fsdfsdfsdfsfsf</p>
-                <p>fsdfsdfsdfsfsf</p>
-              </pre>
+              <pre>
+                <div class="aboutme-data">
+                  <p><strong>(2023 - 2024) CERTIFICATION IN DATA & ANALYTICS</strong></p>
+                  <p><span>thePower Business School</span></p><hr>
+                </div>
+                <div class="aboutme-data" style="margin-top: -20px;">
+                  <p><b>(2019 - 2021) MASTER'S DEGREE IN WEB DEVELOPMENT OF SITES AND APPLICATIONS</b></p>
+                  <p><span>Universitat Oberta de Catalunya (UOC)</span></p><hr>
+                </div>
+                <div class="aboutme-data" style="margin-top: -20px;">
+                  <p><b>(2005 - 2012) BACHELOR'S DEGREE IN COMPUTER ENGINEERING</b></p>
+                  <p><span>Escola Universitària de Informàtica (EUI, UAB). Sabadell, Barcelona</span></p><hr>
+                </div>
+                <div class="aboutme-data" style="margin-top: -20px;">
+                  <p><b>(2002 - 2004) HIGHER TECHNICIAN IN COMPUTER APPLICATION DEVELOPMENT</b></p>
+                  <p><span>IES Vallès. Sabadell, Barcelona</span></p><hr>
+                </div>
+            </pre>
             </div>
           </div>
         </section>
@@ -431,14 +446,26 @@ function toggleMenu() {
 
           <!--.wrap = container (width: 90%) -->
           <div id='slide-four-container' class="wrap size-80 aligncenter">
-            <h4>Skills and competences</h4><hr>
+            <h4><b>Skills and competences</b></h4><hr>
             <div class="bg-white shadow">
-              <pre style="margin-bottom: 40px;">
-                <p>fsdfsdfsdfsfsf</p>
-                <p>fsdfsdfsdfsfsf</p>
-                <p>fsdfsdfsdfsfsf</p>
-                <p>fsdfsdfsdfsfsf</p>
-              </pre>
+              <pre>
+                <div class="aboutme-data">
+                  <p><strong>(2023 - 2024) CERTIFICATION IN DATA & ANALYTICS</strong></p>
+                  <p><span>thePower Business School</span></p><hr>
+                </div>
+                <div class="aboutme-data" style="margin-top: -20px;">
+                  <p><b>(2019 - 2021) MASTER'S DEGREE IN WEB DEVELOPMENT OF SITES AND APPLICATIONS</b></p>
+                  <p><span>Universitat Oberta de Catalunya (UOC)</span></p><hr>
+                </div>
+                <div class="aboutme-data" style="margin-top: -20px;">
+                  <p><b>(2005 - 2012) BACHELOR'S DEGREE IN COMPUTER ENGINEERING</b></p>
+                  <p><span>Escola Universitària de Informàtica (EUI, UAB). Sabadell, Barcelona</span></p><hr>
+                </div>
+                <div class="aboutme-data" style="margin-top: -20px;">
+                  <p><b>(2002 - 2004) HIGHER TECHNICIAN IN COMPUTER APPLICATION DEVELOPMENT</b></p>
+                  <p><span>IES Vallès. Sabadell, Barcelona</span></p><hr>
+                </div>
+            </pre>
             </div>
           </div>
         </section>
@@ -447,7 +474,7 @@ function toggleMenu() {
           <span class="background" style="background-image:url('wallpaper8.png'); opacity: 0.2;"></span>
 
           <div id='slide-five-container' class="wrap size-80 aligncenter">
-            <h4>My projects</h4><hr>
+            <h4><b>My projects</b></h4><hr>
             <div class="project-grid">
               <article>
                 <img src="bank.PNG" alt="Sample photo">
