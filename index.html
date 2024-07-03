@@ -57,13 +57,29 @@ nav[role='navigation'] li a {
 #slide-two-container h4,
 #slide-three-container h4,
 #slide-four-container h4,
-#slide-five-container h4,
-#slide-six-container{
+#slide-five-container h4{
   text-align: center;
-  font-weight: 100;
+  font-weight: 400;
   margin: 10px 0;
 }
 
+.aboutme-data{
+  margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+.aboutme-data p:first-child{
+  font-weight: 600;
+}
+
+.aboutme-data p{
+  margin: 0px;
+}
+
+.aboutme-data hr{
+  margin: 10px 0px;
+}
 
 .project-grid { 
   display: grid;
@@ -224,10 +240,9 @@ header nav ul {
 #slide-two-container h4,
 #slide-three-container h4,
 #slide-four-container h4,
-#slide-five-container h4,
-#slide-six-container{
+#slide-five-container h4{
   text-align: left;
-  font-size:1em;
+  font-size:14px;
   font-weight: 400;
 }
 
@@ -333,13 +348,13 @@ function toggleMenu() {
                     <img style='border-radius: 200px; width: 400px;' src="perfil.png"></img>
                   </div>
               </div>
-              <div class="column" style="font-size:2em">
+              <div class="column" style="font-size:1.6em">
                 <p style="font-size: 0.6em; line-height: 1.5em;">Passionated for learning and applying new technologies that are constantly emerging and evolving. 
                 <p style="font-size: 0.6em; line-height: 1.5em;">Highly motivated to face new challenges and responsibilities. </p>
                 <p style="font-size: 0.6em; line-height: 1.5em;">Currently, I am redirecting my professional career towards the Data Science and Analytics sector.</p><br>
-                <p><i>Data analytics</i></p>
-                <p><i>Web development</i></p>
-                <p><i>Computer engineering</i></p>
+                <p><i><b>Data analytics</b></i></p>
+                <p><i><b>Web development</b></i></p>
+                <p><i><b>Computer engineering</b></i></p>
               </div>
               </div>
               </div>
@@ -359,10 +374,22 @@ function toggleMenu() {
             <h4>Education</h4><hr>
             <div class="bg-white shadow">
               <pre style="margin-bottom: 40px;">
-                <p>fsdfsdfsdfsfsf</p>
-                <p>fsdfsdfsdfsfsf</p>
-                <p>fsdfsdfsdfsfsf</p>
-                <p>fsdfsdfsdfsfsf</p>
+                  <div class="aboutme-data">
+                    <p><span>(2023 - 2024) </span><span>CERTIFICATION IN DATA & ANALYTICS</span></p>
+                    <p><span>thePower Business School</span></p><hr>
+                  </div>
+                  <div class="aboutme-data">
+                    <p><span>(2019 - 2021) </span><span>MASTER'S DEGREE IN WEB DEVELOPMENT OF SITES AND APPLICATIONS </span></p>
+                    <p><span>Universitat Oberta de Catalunya (UOC)</span></p><hr>
+                  </div>
+                  <div class="aboutme-data">
+                    <p><span>(2005 - 2012) </span><span>BACHELOR'S DEGREE IN COMPUTER ENGINEERING</span></p>
+                    <p><span>Escola Universitària de Informàtica (EUI, UAB). Sabadell, Barcelona</span></p><hr>
+                  </div>
+                  <div class="aboutme-data">
+                    <p><span>(2002 - 2004) </span><span>HIGHER TECHNICIAN IN COMPUTER APPLICATION DEVELOPMENT</span></p>
+                    <p><span>IES Vallès. Sabadell, Barcelona</span></p><hr>
+                  </div>
               </pre>
             </div>
           </div>
@@ -419,7 +446,7 @@ function toggleMenu() {
               <article>
                 <img src="inquilino.PNG" alt="Sample photo">
                 <div class="text">
-                  <h3>El inquilino ideal</h3>
+                  <h3>Your perfect room mate</h3>
                   <p>App web that use machine learning to try to find your ideal room mate that fits better with your personal preferences</p>
                   <button>More details</button>
                 </div>
