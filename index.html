@@ -89,6 +89,13 @@
   display: none;
 }
 
+#mobile-menu-container{
+  position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
 #mobile-menu-icon:hover{
 cursor: pointer;
 }
@@ -163,8 +170,16 @@ header nav ul {
     justify-content: center;
 }
 
+#mobile-menu-container{
+  top:40px
+}
+
+#mobile-menu-items li a {
+  font-size: 1.2em;
+}
+
 #mobile-menu-icon{
-  float: none;
+  float: left;
   margin: 10px;
 }
 
@@ -234,7 +249,7 @@ function toggleMenu() {
 
           <a id='mobile-menu-icon'  onclick="toggleMenu()" ><img src='mobile-img.jpg' style="width: 50px; height: 50px;"></a>
         
-        <div style="position: fixed; top: 0; right: 0; padding: 10px;">
+        <div id='mobile-menu-container'>
           <ul id="mobile-menu-items">
             <li><a href="#slide=2">Education</a></li>
             <li><a href="#slide=3">Experience</a></li>
@@ -262,7 +277,7 @@ function toggleMenu() {
                   </div>
               </div>
               <div class="column" style="font-size:2em">
-                <p class="text-intro" style="font-size: 0.8em; line-height: 1.5em;"><strong>Accomplished IT professional with a robust background in:</strong><br></p>
+                <p class="text-intro" style="font-size: 0.8em; line-height: 1.5em;"><strong>Accomplished IT professional with a robust background in:</strong><br><br></p>
                 <p><i>Data analytics</i></p>
                 <p><i>Web development</i></p>
                 <p><i>Computer engineering</i></p>
