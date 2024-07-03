@@ -68,6 +68,12 @@ nav[role='navigation'] li a {
   width: 300px;
 }
 
+.columna-derecha-home{
+  font-size: 1.8em;
+    width: 50%!important;
+    padding: 40px!important;
+}
+
 .aboutme-data{
   margin: 0;
   padding: 0;
@@ -204,6 +210,10 @@ html nav{
   font-size: 0.6em;
 }
 
+.columna-derecha-home{
+  padding: 0px 20px !important;
+}
+
 .logo a {
   float: initial;
   margin: 10px auto;
@@ -239,14 +249,14 @@ header nav ul {
 }
 
 #slide-one-container,
-#slide-three-container,
-#slide-four-container,
 #slide-five-container,
 #slide-six-container{
   margin-top: 100px;
 }
 
-#slide-two-container{
+#slide-two-container,
+#slide-three-container,
+#slide-four-container{
   margin-top: 160px;
 }
 
@@ -364,15 +374,17 @@ function toggleMenu() {
                   <div class='perfil'>
                     <img src="perfil.png"></img>
                   </div>
-              </div>
-              <div class="column" style="font-size:1.8em">
-                <p style="font-size: 0.8em; line-height: 1.5em; margin: 0 0 10px 0;">Passionated for learning and applying new technologies that are constantly emerging and evolving. 
-                <p style="font-size: 0.8em; line-height: 1.5em; margin: 10px 0;">Highly motivated to face new challenges and responsibilities. </p>
-                <p style="font-size: 0.8em; line-height: 1.5em; margin: 10px 0;">Currently, I am redirecting my professional career towards the Data Science and Analytics sector.</p><br>
-                <p><i><b>Data analytics</b></i></p>
-                <p><i><b>Web development</b></i></p>
-                <p><i><b>Computer engineering</b></i></p>
-              </div>
+                </div>
+                
+                <div class="column columna-derecha-home">
+                  <p style="font-size: 0.8em; line-height: 1.5em; margin: 0 0 10px 0;">Passionated for learning and applying new technologies that are constantly emerging and evolving. 
+                  <p style="font-size: 0.8em; line-height: 1.5em; margin: 10px 0;">Highly motivated to face new challenges and responsibilities. </p>
+                  <p style="font-size: 0.8em; line-height: 1.5em; margin: 10px 0;">Currently, I am redirecting my professional career towards the Data Science and Analytics sector.</p><br>
+                  <p><i><b>Data analytics</b></i></p>
+                  <p><i><b>Web development</b></i></p>
+                  <p><i><b>Computer engineering</b></i></p>
+
+                </div>
               </div>
               </div>
 
@@ -495,7 +507,7 @@ function toggleMenu() {
               <article>
                 <img src="attendance.PNG" alt="Sample photo">
                 <div class="text">
-                  <h3>Work attendance & environment </h3>
+                  <h3>Work attendance</h3>
                   <p>Analyse a dataset from a IT company to find out the employees working preferences (work from home or office) and their attendance</p>
                   <button>More details</button>
                 </div>
