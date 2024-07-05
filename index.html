@@ -97,30 +97,82 @@ nav[role='navigation'] li a {
   grid-gap: 20px;
   align-items: stretch;
   font-size: 1em;
+  text-align: left;
   }
 
 .project-grid > article {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   background: #fff;
+  text-align: center;
 }
 
 .project-grid > article img {
   max-width: 100%;
   max-height: 336px;
 }
+
 .project-grid .text {
   padding: 0 20px 20px;
 }
-.project-grid .text > button {
+
+/* .project-grid .text > button {
   background: gray;
   border: 0;
   color: white;
   padding: 10px;
   width: 100%;
-  }
+  } */
 
-  .social-media img{
+.project-grid a {
+  color: initial;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+    width: 200px;
+}
+
+.project-grid h3 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.project-one{
+  display: grid;
+  grid-template-columns: 25% 70%;
+  grid-gap: 20px;
+  /* align-items: center; */
+  justify-items: center;
+  font-size: 1em;
+}
+
+.project-one p{
+}
+
+.project-one-columna-iz{
+text-align: left;
+}
+
+.project-one-columna-iz div > p{
+margin-bottom: 10px;
+}
+
+.project-one-columna-de img{
+  min-height: 457px;
+}
+
+
+/* .project-detail p{
+  margin: 10px 0 20px 0;
+  text-align: left;
+} */
+
+.social-media img{
   width: 60px;
   margin: 10px;
 }
@@ -147,6 +199,19 @@ cursor: pointer;
 
 
 @media (max-width: 1440px) {
+
+.project-one{
+  display: grid;
+  grid-template-columns: none;
+}
+
+
+/* .project-one-columna-iz{
+}
+
+.project-one-columna-de{
+} */
+
 
 #main-menu{
   display: none;
@@ -295,6 +360,9 @@ header nav ul {
   font-size: 0.8em;
 }
 
+
+
+
 .aboutme-data{
   font-size: 0.8em;
 }
@@ -336,7 +404,7 @@ function toggleMenu() {
               <a href="#slide=3">Experience</a>
               <a href="#slide=4">Skills & Competences</a>
               <a href="#slide=5">My Projects</a>
-              <a href="#slide=6">Contact</a>
+              <a href="#slide=7">Contact</a>
             </li>
           </ul>
         </ul>
@@ -354,7 +422,7 @@ function toggleMenu() {
             <li><a href="#slide=3">Experience</a></li>
             <li><a href="#slide=4">Skills</a></li>
             <li><a href="#slide=5">My Projects</a></li>
-            <li><a href="#slide=6">Contact me</a></li>
+            <li><a href="#slide=7">Contact me</a></li>
 
           </ul>
         </div>
@@ -502,25 +570,25 @@ function toggleMenu() {
               <article>
                 <img src="images/bank.PNG" alt="Sample photo">
                 <div class="text">
-                  <h3 style="font-size: 1.5em;"><b>Bank case study</b></h3>
+                  <h3><b>Bank case study</b></h3>
                   <p>Complete analysis about different campaigns from a portuguese bank to check if an specific product (long term ) was subscribed or not.</p>
-                  <a href="'"><button>More details</button></a>
+                  <a href="#slide=6">More details</a>
                 </div>
               </article>
               <article>
                 <img src="images/inquilino.PNG" alt="Sample photo">
                 <div class="text">
-                  <h3 style="font-size: 1.5em;"><b>Your perfect room mate</b></h3>
+                  <h3><b>Your perfect room mate</b></h3>
                   <p>App web that use machine learning to try to find your ideal room mate that fits better with your personal preferences</p>
-                  <a href="'"><button>More details</button></a>
+                  <a href="'">More details</a>
                 </div>
               </article>
               <article>
                 <img src="images/attendance.PNG" alt="Sample photo">
                 <div class="text">
-                  <h3 style="font-size: 1.5em;"><b>Work attendance</b></h3>
+                  <h3><b>Work attendance</b></h3>
                   <p>Analyse a dataset from a IT company to find out the employees working preferences (work from home or office) and their attendance</p>
-                  <a href="'"><button>More details</button></a>
+                  <a href="'">More details</a>
                 </div>
               </article>
             </div>
@@ -529,6 +597,73 @@ function toggleMenu() {
         </section>
 
         <section id="slide=6">
+          <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
+
+          <div id='slide-five-container' class="wrap size-80 aligncenter">
+            <h4><b>Bank case study</b></h4><hr>
+              <div class="bg-white shadow">
+                <p style="text-align:left"><i>* Basado en el reto guiado impartido de las últimas formaciones académicas en thePower D&A</i></p>
+
+                <div class="project-one">
+                  
+                    <div class="project-one-columna-iz">
+                      <div>
+                        <p ><b>Stack Data & Analyst:</b></p>
+                        <ul style="list-style: disc; text-align: left;">
+                          <li>Python</li>
+                          <li>Numpy</li>
+                          <li>Pandas</li>
+                          <li>Matplotlib</li>
+                          <li>Seaborn</li>
+                          <li>Plotly</li>
+                          <li>Propósito del reto</li>
+                        </ul>
+                      </div><hr>
+                      <div>
+                        <p ><b>El propósito del reto:</b></p>
+                        <ul style="list-style: disc; text-align: left;">
+                          <li>EDA: análisis exploratorio de los datos</li>
+                          <li>Limpieza de datos</li>
+                          <li>Gestión de nulos</li>
+                          <li>Visualización de datos</li>
+                        </ul>    
+                      </div><hr>
+                      <div>
+                        <p ><b>Contexto del caso y finalidad:</b></p>
+                        <p>Se proporcionan unas fuentes de datos extraídas de unas campañas de marketing de una institución bancaria portuguesa basadas en llamadas telefónicas. Se pretende determinar si el producto (depósito a plazo bancario) será suscrito o no, y sacar conclusiones de ello.</p>
+                        </p>
+                      </div>
+                    </div>
+                  
+
+                  <div class="project-one-columna-de">
+                    <div>
+                        <img src="images/bank-detail1.PNG" alt="Sample photo">
+                        <img src="images/bank-detail2.PNG" alt="Sample photo">
+                    </div>
+                    <hr style="margin:0"><hr>
+                    
+                    <div>
+                      <p><b>Conclusiones después del análisis del dataset</b></p>
+                      <ul style="list-style: disc; text-align: left;">
+                        <li>La campaña no está funcionando, ya que casi el 90% de las llamadas no son fructíferas y los clientes no se están suscribiendo.</li>
+                        <li>El número de llamadas a lo largo del tiempo no ha fluctuado demasiado, además tenemos una distribución uniforme del número de llamadas por mes, así como el reparto entre suscritos y no suscritos.</li>
+                        <li>Cuánto más larga es la llamada más fácil es que el cliente decida aceptar.</li>
+                        <li>A partir de los 10 contactos con el cliente durante la misma campaña muy probablemente no decidan suscribirse. Sin embargo, si los contactos se han realizado antes de esta campaña los resultados se invierten.</li>
+                        <li>Los usuarios a los que más le está convenciendo la campaña son los que tienen más de 60 años, además llegamos más a los usuarios casados frente a los solteros.</li>
+                        <li>Principalmente las suscripciones vienen de las llamadas realizadas a teléfonos frente a la de los móviles. Esto puede ser debido a que nos marquen la llamada como spam o que es más dificil que la gente atienda una llamada realizada por un número que no conoce desde el móvil.</li>
+                        <li>Por último, la gente que en la anterior campaña se suscribieron tiene una alta tasa de no suscripciones.</li>
+                      </ul>    
+                    </div>
+                </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+        <section id="slide=7">
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
           <div class="wrap">
             <div class="content-center text-serif">
