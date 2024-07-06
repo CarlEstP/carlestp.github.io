@@ -187,7 +187,7 @@ font-size: 14px;
 
 .social-media img{
   width: 60px;
-  margin: 10px;
+  margin: 20px;
 }
 
 
@@ -370,13 +370,17 @@ header nav ul {
   margin: 0;
 }
 
+
+#section-4 .column {
+padding: 0 20px;
+
+}
+
+
 .project-grid{
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   font-size: 0.8em;
 }
-
-
-
 
 .aboutme-data{
   font-size: 0.8em;
@@ -411,23 +415,26 @@ function toggleMenu() {
 <body>
     <header role="banner">
       <nav role="navigation" id="main-menu">
-         <p class="logo"><a style="background:url('') no-repeat 0 0; text-indent: 0px; color: #111;
-    font-size: 3em;     text-transform: none;" href="index.html#slide=1" title="CarlEstP"><strong>CarlEstP</strong></a></p>
+         <p class="logo">
+          <a style="background:url('') no-repeat 0 0; text-indent: 0px; color: #111; font-size: 2em;text-transform: none; width: 100%!important;" href="index.html#slide=1" title="CarlEstP">
+            <strong>Hi, I'm Carlos</strong>
+          </a>
+        </p>
           <ul>
             <li style='display: inline-flex'>
               <a href="#slide=2">Education</a>
               <a href="#slide=3">Experience</a>
               <a href="#slide=4">Skills & Competences</a>
               <a href="#slide=5">My Projects</a>
-              <a href="#slide=7">Contact</a>
+              <a href="#slide=9">Contact</a>
             </li>
           </ul>
         </ul>
       </nav>
 
       <nav role="navigation" id="mobile-menu">
-        <p class="logo"><a style="background:url('') no-repeat 0 0; text-indent: 0px; color: #111; font-size: 3em; text-transform: none;" 
-          href="index.html#slide=1" title="CarlEstP">CarlEstP</a></p>
+        <p class="logo"><a style="background:url('') no-repeat 0 0; text-indent: 0px; color: #111;font-size: 2em;text-transform: none; width: 100%!important;" 
+          href="index.html#slide=1" title="CarlEstP">Hi, I'm Carlos</a></p>
 
           <a id='mobile-menu-icon'  onclick="toggleMenu()" ><img src='images/mobile-img.jpg' style="width: 50px; height: 50px;"></a>
         
@@ -437,7 +444,7 @@ function toggleMenu() {
             <li><a href="#slide=3">Experience</a></li>
             <li><a href="#slide=4">Skills</a></li>
             <li><a href="#slide=5">My Projects</a></li>
-            <li><a href="#slide=7">Contact me</a></li>
+            <li><a href="#slide=9">Contact me</a></li>
 
           </ul>
         </div>
@@ -451,29 +458,25 @@ function toggleMenu() {
           <div class="wrap size-70 aligncenter">
             <div id='slide-one-container' class="bg-white shadow" style="border-radius: 100px; padding: 0px;" >
 
-            <div class="grid vertical-align">
-
+              <div class="grid vertical-align">
                 <div class="column">
-                  <div class='perfil'>
-                    <img src="images/perfil.png"></img>
-                  </div>
+                    <div class='perfil'>
+                      <img src="images/perfil.png"></img>
+                    </div>
                 </div>
-                
+                  
                 <div class="column columna-derecha-home">
-                  <p style="font-size: 0.8em; line-height: 1.5em; margin: 0 0 10px 0;">Passionated for learning and applying new technologies that are constantly emerging and evolving. 
-                  <p style="font-size: 0.8em; line-height: 1.5em; margin: 10px 0;">Highly motivated to face new challenges and responsibilities. </p>
-                  <p style="font-size: 0.8em; line-height: 1.5em; margin: 10px 0;">Currently, I am redirecting my professional career towards the Data Science and Analytics sector.</p><br>
-                  <p><i><b>Data analytics</b></i></p>
-                  <p><i><b>Web development</b></i></p>
-                  <p><i><b>Computer engineering</b></i></p>
-
+                    <p style="font-size: 0.8em; line-height: 1.5em; margin: 0 0 10px 0;">Passionated for learning and applying new technologies that are constantly emerging and evolving. 
+                    <p style="font-size: 0.8em; line-height: 1.5em; margin: 10px 0;">Highly motivated to face new challenges and responsibilities. </p>
+                    <p style="font-size: 0.8em; line-height: 1.5em; margin: 10px 0;">Currently, I am redirecting my professional career towards the Data Science and Analytics sector.</p><br>
+                    <p><i><b>Data analytics</b></i></p>
+                    <p><i><b>Web development</b></i></p>
+                    <p><i><b>Computer engineering</b></i></p>
                 </div>
               </div>
+
               </div>
-
-
             </div>
-
           </div>
           <!-- .end .wrap -->
         </section>
@@ -543,34 +546,47 @@ function toggleMenu() {
             <h4><b>Skills and competences</b></h4><hr>
             <div class="bg-white shadow">
               <pre>
-                <div class="aboutme-data">
-                  <p><strong>Programming languages</strong></p>
-                  <p><span>Python, Javascript, PHP, JAVA</span></p><hr>
-                </div>
-                <div class="aboutme-data" style="margin-top: -20px;">
-                  <p><b>Visualization tools</b></p>
-                  <p><span> Power BI, Tableau</span></p><hr>
-                </div>
-                <div class="aboutme-data" style="margin-top: -20px;">
-                  <p><b>Data Analytics Libraries</b></p>
-                  <p><span>Pandas, Matplotlib, Seaborn, Plotly, Scikit-learn</span></p><hr>
-                </div>
-                <div class="aboutme-data" style="margin-top: -20px;">
-                  <p><b>Databases</b></p>
-                  <p><span>SQL, MongoDB</span></p><hr>
-                </div>
-                <div class="aboutme-data" style="margin-top: -20px;">
-                  <p><b>Development Frameworks</b></p>
-                  <p><span>Angular, Express</span></p><hr>
-                </div>
-                <div class="aboutme-data" style="margin-top: -20px;">
-                  <p><b>Web development tools</b></p>
-                  <p><span>NodeJS, Jquery, GIT, Typescript, Postman, Bootstrap, Tailwind, React</span></p><hr>
-                </div>
-                <div class="aboutme-data" style="margin-top: -20px;">
-                  <p><b>Content Management System</b></p>
-                  <p><span>Wordpress, Comitium, Drupal, Code Igniter, Laravel</span></p><hr>
-                </div>
+
+                <div class="grid">
+                  <div class="column">
+                    <div class="aboutme-data" >
+                      <p><strong>Programming languages</strong></p>
+                      <p><span>Python, Javascript, PHP, JAVA</span></p><hr>
+                    </div>
+                    <div class="aboutme-data" >
+                      <p><b>Visualization tools</b></p>
+                      <p><span> Power BI, Tableau</span></p><hr>
+                    </div>
+                    <div class="aboutme-data" >
+                      <p><b>Data Analytics Libraries</b></p>
+                      <p><span>Pandas, Matplotlib, Seaborn, Plotly, Scikit-learn</span></p><hr>
+                    </div>
+                    <div class="aboutme-data" >
+                      <p><b>Databases</b></p>
+                      <p><span>SQL, MongoDB</span></p><hr>
+                    </div>
+                  </div>
+
+                  <div class="column">
+                    <div class="aboutme-data" >
+                      <p><b>Development Frameworks</b></p>
+                      <p><span>Angular, Express</span></p><hr>
+                    </div>
+                    <div class="aboutme-data" >
+                      <p><b>Web development tools</b></p>
+                      <p><span>NodeJS, Jquery, GIT, Typescript, Postman, Bootstrap, Tailwind, React</span></p><hr>
+                    </div>
+                    <div class="aboutme-data" >
+                      <p><b>Content Management System</b></p>
+                      <p><span>Wordpress, Comitium, Drupal, Code Igniter, Laravel</span></p><hr>
+                    </div>
+                    <div class="aboutme-data" >
+                      <p><b>Languages</b></p>
+                      <p><span>B2 English Level</span></p><hr>
+                    </div>
+                  </div>
+
+             
             </pre>
             </div>
           </div>
@@ -595,7 +611,7 @@ function toggleMenu() {
                 <div class="text">
                   <h3><b>Your perfect room mate</b></h3>
                   <p>App web that use machine learning to try to find your ideal room mate that fits better with your personal preferences</p>
-                  <a href="'">More details</a>
+                  <a href="#slide=7">More details</a>
                 </div>
               </article>
               <article>
@@ -603,7 +619,7 @@ function toggleMenu() {
                 <div class="text">
                   <h3><b>Work attendance</b></h3>
                   <p>Analyse a dataset from a IT company to find out the employees working preferences (work from home or office) and their attendance</p>
-                  <a href="'">More details</a>
+                  <a href="#slide=8">More details</a>
                 </div>
               </article>
             </div>
@@ -613,16 +629,13 @@ function toggleMenu() {
 
         <section id="slide=6">
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
-
           <div id='slide-five-container' class="wrap size-80 aligncenter">
               <div class="bg-white shadow">
                 <h4 style="text-align:left; margin:0px;">Bank case study</h4>
                 <p style="text-align:left; font-size: 12px; margin-bottom: 10px;"><i>* Basado en el reto guiado impartido de las últimas formaciones académicas en thePower D&A</i>
                   <!-- <span style="float:right"><a href='https://github.com/CarlEstP/bank_case_study' target="_blank"><img src='images/github-icon.webp'></a></span> -->
                 </p>
-
                 <div class="project-one">
-                  
                     <div class="project-one-columna-iz">
                       <div>
                         <p ><b>Stack Data & Analyst:</b></p>
@@ -650,8 +663,6 @@ function toggleMenu() {
                         </p>
                       </div>
                     </div>
-                  
-
                   <div class="project-one-columna-de">
                     <div>
                         <img src="images/bank-detail1.PNG" alt="Sample photo">
@@ -659,7 +670,6 @@ function toggleMenu() {
                         <img src="images/bank-detail3.PNG" alt="Sample photo">
                     </div>
                     <hr style="margin: 10px 0;">
-                    
                     <div>
                       <p style="text-align: left; margin: 0 0 10px 10px;"><b>Conclusiones después del análisis del dataset:</b></p>
                       <ul style="list-style: disc; text-align: left;">
@@ -673,14 +683,131 @@ function toggleMenu() {
                       </ul>    
                     </div>
                 </div>
-
             </div>
-
           </div>
         </section>
 
-
         <section id="slide=7">
+          <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
+          <div id='slide-five-container' class="wrap size-80 aligncenter">
+              <div class="bg-white shadow">
+                <h4 style="text-align:left; margin:0px;">Your perfect room mate</h4>
+                <p style="text-align:left; font-size: 12px; margin-bottom: 10px;"><i>* Basado en el reto guiado impartido de las últimas formaciones académicas en thePower D&A</i>
+                  <!-- <span style="float:right"><a href='https://github.com/CarlEstP/bank_case_study' target="_blank"><img src='images/github-icon.webp'></a></span> -->
+                </p>
+                <div class="project-one">
+                    <div class="project-one-columna-iz">
+                      <div>
+                        <p ><b>Stack Data & Analyst:</b></p>
+                        <ul style="list-style: disc; text-align: left;">
+                          <li>Python</li>
+                          <li>Pandas</li>
+                          <li>Numpy</li>
+                          <li>Matplotlib / Seaborn / Plotly</li>
+                        </ul>
+                      </div>
+                      <hr style="margin: 10px 0;">
+                      <div>
+                        <p ><b>El propósito del reto:</b></p>
+                        <ul style="list-style: disc; text-align: left;">
+                          <li>EDA: análisis exploratorio de los datos</li>
+                          <li>Limpieza de datos</li>
+                          <li>Gestión de nulos</li>
+                          <li>Visualización de datos</li>
+                        </ul>    
+                      </div>
+                      <hr style="margin: 10px 0;">
+                      <div>
+                        <p ><b>Contexto del caso y finalidad:</b></p>
+                        <p>Analizar unos datasets de unas campañas de una institución bancaria portuguesa. Se pretende determinar si el producto (depósito a plazo bancario) será suscrito o no, y sacar conclusiones de ello.</p>
+                        </p>
+                      </div>
+                    </div>
+                  <div class="project-one-columna-de">
+                    <div>
+                        <img src="images/bank-detail2.PNG" alt="Sample photo">
+                        <img src="images/bank-detail3.PNG" alt="Sample photo">
+                        <img src="images/bank-detail1.PNG" alt="Sample photo">
+                    </div>
+                    <hr style="margin: 10px 0;">
+                    <div>
+                      <p style="text-align: left; margin: 0 0 10px 10px;"><b>Conclusiones después del análisis del dataset:</b></p>
+                      <ul style="list-style: disc; text-align: left;">
+                        <li>La campaña no está funcionando, ya que casi el 90% de las llamadas no son fructíferas y los clientes no se están suscribiendo.</li>
+                        <li>El número de llamadas a lo largo del tiempo no ha fluctuado demasiado, además tenemos una distribución uniforme del número de llamadas por mes, así como el reparto entre suscritos y no suscritos.</li>
+                        <li>Cuánto más larga es la llamada más fácil es que el cliente decida aceptar.</li>
+                        <li>A partir de los 10 contactos con el cliente durante la misma campaña muy probablemente no decidan suscribirse. Sin embargo, si los contactos se han realizado antes de esta campaña los resultados se invierten.</li>
+                        <li>Los usuarios a los que más le está convenciendo la campaña son los que tienen más de 60 años, además llegamos más a los usuarios casados frente a los solteros.</li>
+                        <li>Principalmente las suscripciones vienen de las llamadas realizadas a teléfonos frente a la de los móviles. Esto puede ser debido a que nos marquen la llamada como spam o que es más dificil que la gente atienda una llamada realizada por un número que no conoce desde el móvil.</li>
+                        <li>Por último, la gente que en la anterior campaña se suscribieron tiene una alta tasa de no suscripciones.</li>
+                      </ul>    
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="slide=8">
+          <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
+          <div id='slide-five-container' class="wrap size-80 aligncenter">
+              <div class="bg-white shadow">
+                <h4 style="text-align:left; margin:0px;">Work attendance</h4>
+                <p style="text-align:left; font-size: 12px; margin-bottom: 10px;"><i>* Basado en el reto guiado impartido de las últimas formaciones académicas en thePower D&A</i>
+                  <!-- <span style="float:right"><a href='https://github.com/CarlEstP/bank_case_study' target="_blank"><img src='images/github-icon.webp'></a></span> -->
+                </p>
+                <div class="project-one">
+                    <div class="project-one-columna-iz">
+                      <div>
+                        <p ><b>Stack Data & Analyst:</b></p>
+                        <ul style="list-style: disc; text-align: left;">
+                          <li>Python</li>
+                          <li>Pandas</li>
+                          <li>Numpy</li>
+                          <li>Matplotlib / Seaborn / Plotly</li>
+                        </ul>
+                      </div>
+                      <hr style="margin: 10px 0;">
+                      <div>
+                        <p ><b>El propósito del reto:</b></p>
+                        <ul style="list-style: disc; text-align: left;">
+                          <li>EDA: análisis exploratorio de los datos</li>
+                          <li>Limpieza de datos</li>
+                          <li>Gestión de nulos</li>
+                          <li>Visualización de datos</li>
+                        </ul>    
+                      </div>
+                      <hr style="margin: 10px 0;">
+                      <div>
+                        <p ><b>Contexto del caso y finalidad:</b></p>
+                        <p>Analizar unos datasets de unas campañas de una institución bancaria portuguesa. Se pretende determinar si el producto (depósito a plazo bancario) será suscrito o no, y sacar conclusiones de ello.</p>
+                        </p>
+                      </div>
+                    </div>
+                  <div class="project-one-columna-de">
+                    <div>
+                        <img src="images/bank-detail3.PNG" alt="Sample photo">
+                        <img src="images/bank-detail1.PNG" alt="Sample photo">
+                        <img src="images/bank-detail2.PNG" alt="Sample photo">
+                    </div>
+                    <hr style="margin: 10px 0;">
+                    <div>
+                      <p style="text-align: left; margin: 0 0 10px 10px;"><b>Conclusiones después del análisis del dataset:</b></p>
+                      <ul style="list-style: disc; text-align: left;">
+                        <li>La campaña no está funcionando, ya que casi el 90% de las llamadas no son fructíferas y los clientes no se están suscribiendo.</li>
+                        <li>El número de llamadas a lo largo del tiempo no ha fluctuado demasiado, además tenemos una distribución uniforme del número de llamadas por mes, así como el reparto entre suscritos y no suscritos.</li>
+                        <li>Cuánto más larga es la llamada más fácil es que el cliente decida aceptar.</li>
+                        <li>A partir de los 10 contactos con el cliente durante la misma campaña muy probablemente no decidan suscribirse. Sin embargo, si los contactos se han realizado antes de esta campaña los resultados se invierten.</li>
+                        <li>Los usuarios a los que más le está convenciendo la campaña son los que tienen más de 60 años, además llegamos más a los usuarios casados frente a los solteros.</li>
+                        <li>Principalmente las suscripciones vienen de las llamadas realizadas a teléfonos frente a la de los móviles. Esto puede ser debido a que nos marquen la llamada como spam o que es más dificil que la gente atienda una llamada realizada por un número que no conoce desde el móvil.</li>
+                        <li>Por último, la gente que en la anterior campaña se suscribieron tiene una alta tasa de no suscripciones.</li>
+                      </ul>    
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="slide=9">
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
           <div class="wrap">
             <div class="content-center text-serif">
@@ -688,7 +815,7 @@ function toggleMenu() {
               <h4><strong style="text-align:center; margin: 10px 0;">Contact me:</strong><hr></h4>
               <div class="social-media">
                 <a href="https://linkedin.com/in/carlos-estepa-perez" target='_blank'><img src="images/linkedin-icon.webp" ></a>
-                <a href="mailto:carlos.estepa84@gmail.com" target='_blank'><img src="images/mail-icon.png" ></a>
+                <a href="mailto:carlos.estepa84@gmail.com" target='_blank'><img src="images/mail.png" ></a>
                 <a href="https://github.com/CarlEstP" target='_blank'><img src="images/github-icon.webp"></a>
               </div>
             </div>
