@@ -144,7 +144,7 @@ nav[role='navigation'] li a {
 
 .project-one{
   display: grid;
-  grid-template-columns: 25% 70%;
+  grid-template-columns: 25% 73%;
   grid-gap: 20px;
   /* align-items: center; */
   justify-items: center;
@@ -154,16 +154,29 @@ nav[role='navigation'] li a {
 .project-one p{
 }
 
-.project-one-columna-iz{
-text-align: left;
+.project-one li {
+  line-height: 28px;
+  font-size: 14px;
 }
+
+.project-one-columna-iz{
+  padding: 10px;
+  text-align: left;
+}
+
+.project-one-columna-de{
+  padding: 10px;
+}
+
 
 .project-one-columna-iz div > p{
 margin-bottom: 10px;
+line-height: 28px;
+font-size: 14px;
 }
 
 .project-one-columna-de img{
-  min-height: 457px;
+  width: 350px;
 }
 
 
@@ -206,11 +219,13 @@ cursor: pointer;
 }
 
 
-/* .project-one-columna-iz{
+.project-one-columna-iz{
+  padding: 10px;
 }
 
 .project-one-columna-de{
-} */
+  padding: 10px;
+}
 
 
 #main-menu{
@@ -602,7 +617,9 @@ function toggleMenu() {
           <div id='slide-five-container' class="wrap size-80 aligncenter">
             <h4><b>Bank case study</b></h4><hr>
               <div class="bg-white shadow">
-                <p style="text-align:left"><i>* Basado en el reto guiado impartido de las últimas formaciones académicas en thePower D&A</i></p>
+                <p style="text-align:left; font-size: 12px; margin-bottom: 10px;"><i>* Basado en el reto guiado impartido de las últimas formaciones académicas en thePower D&A</i>
+                  <!-- <span style="float:right"><a href='https://github.com/CarlEstP/bank_case_study' target="_blank"><img src='images/github-icon.webp'></a></span> -->
+                </p>
 
                 <div class="project-one">
                   
@@ -611,14 +628,14 @@ function toggleMenu() {
                         <p ><b>Stack Data & Analyst:</b></p>
                         <ul style="list-style: disc; text-align: left;">
                           <li>Python</li>
-                          <li>Numpy</li>
                           <li>Pandas</li>
+                          <li>Numpy</li>
                           <li>Matplotlib</li>
                           <li>Seaborn</li>
                           <li>Plotly</li>
-                          <li>Propósito del reto</li>
                         </ul>
-                      </div><hr>
+                      </div>
+                      <hr style="margin: 10px 0;">
                       <div>
                         <p ><b>El propósito del reto:</b></p>
                         <ul style="list-style: disc; text-align: left;">
@@ -627,7 +644,8 @@ function toggleMenu() {
                           <li>Gestión de nulos</li>
                           <li>Visualización de datos</li>
                         </ul>    
-                      </div><hr>
+                      </div>
+                      <hr style="margin: 10px 0;">
                       <div>
                         <p ><b>Contexto del caso y finalidad:</b></p>
                         <p>Se proporcionan unas fuentes de datos extraídas de unas campañas de marketing de una institución bancaria portuguesa basadas en llamadas telefónicas. Se pretende determinar si el producto (depósito a plazo bancario) será suscrito o no, y sacar conclusiones de ello.</p>
@@ -641,10 +659,10 @@ function toggleMenu() {
                         <img src="images/bank-detail1.PNG" alt="Sample photo">
                         <img src="images/bank-detail2.PNG" alt="Sample photo">
                     </div>
-                    <hr style="margin:0"><hr>
+                    <hr style="margin: 10px 0;">
                     
                     <div>
-                      <p><b>Conclusiones después del análisis del dataset</b></p>
+                      <p style="text-align: left; margin: 0 0 10px 10px;"><b>Conclusiones después del análisis del dataset:</b></p>
                       <ul style="list-style: disc; text-align: left;">
                         <li>La campaña no está funcionando, ya que casi el 90% de las llamadas no son fructíferas y los clientes no se están suscribiendo.</li>
                         <li>El número de llamadas a lo largo del tiempo no ha fluctuado demasiado, además tenemos una distribución uniforme del número de llamadas por mes, así como el reparto entre suscritos y no suscritos.</li>
