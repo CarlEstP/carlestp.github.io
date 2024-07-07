@@ -57,21 +57,42 @@ nav[role='navigation'] li a {
     background: none;
     text-indent: 0px;
     color: #111;
-    font-size: 2em;
+    font-size: 2.2em;
     text-transform: none;
     width: 100% !important;
     font-weight: 600;
 }
 
 
-#slide-two-container h4,
+/* #slide-two-container h4,
 #slide-three-container h4,
 #slide-four-container h4,
-#slide-five-container h4{
+#slide-five-container h4,
+#slide-six-container h4,
+#slide-seven-container h4,
+#slide-eight-container h4,
+#slide-nine-container h4
+{
   text-align: center;
   font-weight: 400;
   margin: 10px 0;
+} */
+
+#slide-five-container p{
+font-size: 14px;
+line-height: 24px;
 }
+
+#slide-nine-container .info{
+  text-align: left;
+  margin: 20px;
+}
+
+#slide-nine-container p{
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 16px;
+  }
 
 .perfil img{
   border-radius: 200px;
@@ -136,7 +157,8 @@ nav[role='navigation'] li a {
     text-align: center;
     display: block;
     margin: 0px auto;
-    width: 200px;
+    width: 150px;
+    font-size: 14px;
 }
 
 .project-grid h3 {
@@ -339,20 +361,16 @@ header nav ul {
 #mobile-menu-items li a {
   padding: 10px;
   font-size: 16px;
-    line-height: 16px;
-    font-weight: 400;
+  line-height: 16px;
+  font-weight: 400;
 }
 
-#slide-one-container,
-#slide-five-container,
-#slide-six-container{
-  margin-top: 100px;
-}
 
 #slide-two-container,
 #slide-three-container,
-#slide-four-container{
-  margin-top: 160px;
+#slide-four-container,
+#slide-five-container{
+  margin-top: 80px;
 }
 
 #slide-two-container h4,
@@ -362,10 +380,6 @@ header nav ul {
   text-align: left;
   font-size:18px;
   font-weight: 400;
-}
-
-#slide-five-container{
-  margin-top: 150px;
 }
 
 #section-1, #section-2, #section-3, #section-4{
@@ -431,7 +445,7 @@ function toggleMenu() {
     <header role="banner">
       <nav role="navigation" id="main-menu">
          <p class="logo">
-          <a style="text-indent: 0px; color: #111; font-size: 2em;text-transform: none; width: 100%!important;" href="index.html" title="CarlEstP">
+          <a href="index.html" title="CarlEstP">
             <strong>Hi, I'm Carlos</strong>
           </a>
         </p>
@@ -449,8 +463,7 @@ function toggleMenu() {
 
       <nav role="navigation" id="mobile-menu">
         <p class="logo"><a href="index.html#slide=1" title="CarlEstP">Hi, I'm Carlos</a></p>
-
-          <a id='mobile-menu-icon'  onclick="toggleMenu()" ><img src='images/mobile-img.jpg' style="width: 50px; height: 50px;"></a>
+        <a id='mobile-menu-icon'  onclick="toggleMenu()" ><img src='images/mobile-img.jpg' style="width: 50px; height: 50px;"></a>
         
         <div id='mobile-menu-container'>
           <ul id="mobile-menu-items">
@@ -459,9 +472,9 @@ function toggleMenu() {
             <li><a href="#slide=4" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#slide=5" onclick="toggleMenu()">My Projects</a></li>
             <li><a href="#slide=9" onclick="toggleMenu()">Contact me</a></li>
-
           </ul>
         </div>
+        
      </nav>
     </header>
 
@@ -500,7 +513,7 @@ function toggleMenu() {
 
           <!--.wrap = container (width: 90%) -->
           <div id='slide-two-container' class="wrap size-80 aligncenter">
-            <h4><b>Education</b></h4><hr>
+            <h4><b>Education</b></h4><hr style="margin: 20px 0;">
             <div class="bg-white shadow">
               <pre>
                   <div class="aboutme-data">
@@ -529,7 +542,7 @@ function toggleMenu() {
 
           <!--.wrap = container (width: 90%) -->
           <div id='slide-three-container' class="wrap size-80 aligncenter">
-            <h4><b>Experience</b></h4><hr>
+            <h4><b>Experience</b></h4><hr style="margin: 20px 0;">
             <div class="bg-white shadow">
               <pre>
                 <div class="aboutme-data">
@@ -566,7 +579,7 @@ function toggleMenu() {
 
           <!--.wrap = container (width: 90%) -->
           <div id='slide-four-container' class="wrap size-80 aligncenter">
-            <h4><b>Skills and competences</b></h4><hr>
+            <h4><b>Skills and competences</b></h4><hr style="margin: 20px 0;">
             <div class="bg-white shadow">
               <pre style="padding: 0px 20px;">
 
@@ -619,30 +632,30 @@ function toggleMenu() {
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
 
           <div id='slide-five-container' class="wrap size-80 aligncenter">
-            <h4><b>My projects</b></h4><hr>
+            <h4><b>My projects</b></h4><hr style="margin: 20px 0;">
             <div class="project-grid">
               <article>
                 <img src="images/bank.PNG" alt="Sample photo">
                 <div class="text">
-                  <h3><b>Bank case study</b></h3>
+                  <h5 style="margin: 10px 0;">Bank case study</h5>
                   <p>Complete analysis about different campaigns from a portuguese bank to check if an specific product (long term ) was subscribed or not.</p>
-                  <a href="#slide=6" onclick="toggleMenu()">More details</a>
+                  <a href="#slide=6">More details</a>
                 </div>
               </article>
               <article>
                 <img src="images/inquilino.PNG" alt="Sample photo">
                 <div class="text">
-                  <h3><b>Your perfect room mate</b></h3>
+                  <h5 style="margin: 10px 0;">Your perfect room mate</h5>
                   <p>App web that use machine learning to try to find your ideal room mate that fits better with your personal preferences</p>
-                  <a href="#slide=7" onclick="toggleMenu()">More details</a>
+                  <a href="#slide=7">More details</a>
                 </div>
               </article>
               <article>
                 <img src="images/attendance.PNG" alt="Sample photo">
                 <div class="text">
-                  <h3><b>Work attendance</b></h3>
+                  <h5 style="margin: 10px 0;">Work attendance</h5>
                   <p>Analyse a dataset from a IT company to find out the employees working preferences (work from home or office) and their attendance</p>
-                  <a href="#slide=8" onclick="toggleMenu()">More details</a>
+                  <a href="#slide=8">More details</a>
                 </div>
               </article>
             </div>
@@ -652,9 +665,9 @@ function toggleMenu() {
 
         <section id="slide=6">
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
-          <div id='slide-five-container' class="wrap size-80 aligncenter">
+          <div id='slide-six-container' class="wrap size-80 aligncenter">
               <div class="bg-white shadow">
-                <h4 style="text-align:left; margin:0px; font-weight: 600;">Bank case study</h4>
+                <h4 style="margin:0px;"><b>Bank case study</b></h4>
                 <p style="text-align:left; font-size: 12px; margin-bottom: 10px;"><i>* Basado en el reto guiado impartido de las últimas formaciones académicas en thePower D&A</i>
                   <!-- <span style="float:right"><a href='https://github.com/CarlEstP/bank_case_study' target="_blank"><img src='images/github-icon.webp'></a></span> -->
                 </p>
@@ -712,11 +725,10 @@ function toggleMenu() {
 
         <section id="slide=7">
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
-          <div id='slide-five-container' class="wrap size-80 aligncenter">
+          <div id='slide-seven-container' class="wrap size-80 aligncenter">
               <div class="bg-white shadow">
-                <h4 style="text-align:left; margin:0px; font-weight: 600;">Your perfect room mate</h4>
+                <h4 style="margin:0px;"><b>Your perfect room mate</b></h4>
                 <p style="text-align:left; font-size: 12px; margin-bottom: 10px;"><i>* Basado en el reto guiado impartido de las últimas formaciones académicas en thePower D&A</i>
-                  <!-- <span style="float:right"><a href='https://github.com/CarlEstP/bank_case_study' target="_blank"><img src='images/github-icon.webp'></a></span> -->
                 </p>
                 <div class="project-one">
                     <div class="project-one-columna-iz">
@@ -772,11 +784,10 @@ function toggleMenu() {
 
         <section id="slide=8">
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
-          <div id='slide-five-container' class="wrap size-80 aligncenter">
+          <div id='slide-eight-container' class="wrap size-80 aligncenter">
               <div class="bg-white shadow">
-                <h4 style="text-align:left; margin:0px; font-weight: 600;">Work attendance</h4>
+                <h4 style="margin:0px;"><b>Work attendance</b></h4>
                 <p style="text-align:left; font-size: 12px; margin-bottom: 10px;"><i>* Basado en el reto guiado impartido de las últimas formaciones académicas en thePower D&A</i>
-                  <!-- <span style="float:right"><a href='https://github.com/CarlEstP/bank_case_study' target="_blank"><img src='images/github-icon.webp'></a></span> -->
                 </p>
                 <div class="project-one">
                     <div class="project-one-columna-iz">
@@ -834,8 +845,17 @@ function toggleMenu() {
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
           <div class="wrap">
             <div class="content-center text-serif">
-              <div id='slide-six-container' class="bg-white shadow">
-              <h4><strong style="text-align:center; margin: 10px 0;">Contact me:</strong><hr></h4>
+              <div id='slide-nine-container' class="bg-white shadow">
+              <h4><b>Contact info:</b></h4>
+              <hr style="margin: 10px 0;">
+              <div class="info">
+                <p><b>Carlos Estepa Perez</b></p>
+                <p style="margin-bottom: 10px;"><i>Sant Cugat del Vallès, 08172 (Barcelona)</i></p>
+                <p>You can email me to <a href="mailto:carlos.estepa84@gmail.com">carlos.estepa84@gmail.com</a></p>
+                <p>Mi linkedin profile <a href="https://linkedin.com/in/carlos-estepa-perez" target='_blank'>Linkedin</a></p>
+                <p>My github portfolio at  <a href="https://github.com/CarlEstP" target='_blank'>Github</a></p>
+              </div>
+              <hr style="margin: 20px 0;">
               <div class="social-media">
                 <a href="https://linkedin.com/in/carlos-estepa-perez" target='_blank'><img src="images/linkedin-icon.webp" ></a>
                 <a href="mailto:carlos.estepa84@gmail.com" target='_blank'><img src="images/mail.PNG" ></a>
