@@ -4121,7 +4121,8 @@ nav[role='navigation'] li a {
   font-weight: bold;
 }
 nav[role='navigation'] li a:hover {
-  background-color: rgba(50, 50, 50, 0.7);
+  background-color: rgba(235, 235, 235, 0.7);
+  border: 1px solid #9f9f9f;
 }
 
 nav li.twitter a:hover {
