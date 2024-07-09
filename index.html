@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" type='text/css' media='all' href="css/webslides.css">
 
-    <link rel="stylesheet" type='text/css' media='all' href="css/svg-icons.css">
+    <!-- <link rel="stylesheet" type='text/css' media='all' href="css/svg-icons.css"> -->
 
     <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
@@ -49,9 +49,34 @@
 
   <style>
 
+/*=========================================
+Header/Nav
+=========================================== */
+
+header[role='banner'] {
+  background-color: #fff;
+}
+
+nav[role='navigation'] li.active a {
+  background-color: #555;
+  color: #fff;
+}
 
 nav[role='navigation'] li a {
-  background-color: aliceblue;}
+  background-color: aliceblue;
+  color: #fff;
+  border-radius: 20px;
+  margin: 0px 10px;
+  border: 1px solid #ccc;
+  color: #111;
+  width: 180px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+nav[role='navigation'] li a:hover {
+  background-color: rgba(235, 235, 235, 0.7);
+  border: 1px solid #9f9f9f;
+}
 
 .logo a {
     background: none;
@@ -475,29 +500,27 @@ function toggleMenu() {
     <main role="main">
       <article id="webslides" class="vertical">
         <section id="slide=1">
-         <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
-          <div class="wrap size-70 aligncenter">
-            <div id='slide-one-container' class="bg-white shadow" style="border-radius: 100px; padding: 0 0 40px 0;" >
+          <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
 
-              <div class="grid vertical-align">
-                <div class="column">
-                    <div class='perfil'>
-                      <img src="images/perfil.png"></img>
+          <div id='slide-one-container' class="wrap size-80 aligncenter">
+              <div class="bg-white shadow" style="border-radius: 100px; padding: 0 0 40px 0;" >
+                  <div class="grid vertical-align">
+                    <div class="column">
+                        <div class='perfil'>
+                          <img src="images/perfil.png"></img>
+                        </div>
                     </div>
-                </div>
-                  
-                <div class="column columna-derecha-home">
-                    <p style="font-size: 0.7em; line-height: 1.5em; margin: 0 0 10px 0;">Passionated for learning and applying new technologies that are constantly emerging and evolving. 
-                    <p style="font-size: 0.7em; line-height: 1.5em; margin: 10px 0;">Highly motivated to face new challenges and responsibilities. </p>
-                    <p style="font-size: 0.7em; line-height: 1.5em; margin: 10px 0;">Currently, I am redirecting my professional career towards the Data Science and Analytics sector.</p><br>
-                    <p><i><b>Data analytics</b></i></p>
-                    <p><i><b>Web development</b></i></p>
-                    <p><i><b>Computer engineering</b></i></p>
-                </div>
+                      
+                    <div class="column columna-derecha-home">
+                        <p style="font-size: 0.7em; line-height: 1.5em; margin: 0 0 10px 0;">Passionated for learning and applying new technologies that are constantly emerging and evolving. 
+                        <p style="font-size: 0.7em; line-height: 1.5em; margin: 10px 0;">Highly motivated to face new challenges and responsibilities. </p>
+                        <p style="font-size: 0.7em; line-height: 1.5em; margin: 10px 0;">Currently, I am redirecting my professional career towards the Data Science and Analytics sector.</p><br>
+                        <p><i><b>Data analytics</b></i></p>
+                        <p><i><b>Web development</b></i></p>
+                        <p><i><b>Computer engineering</b></i></p>
+                    </div>
+                  </div>
               </div>
-
-              </div>
-            </div>
           </div>
           <!-- .end .wrap -->
         </section>
