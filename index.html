@@ -106,13 +106,17 @@ line-height: 24px;
 
 .perfil img{
   border-radius: 200px;
-  width: 300px;
+  width: 350px;
 }
 
 .columna-derecha-home{
   font-size: 1.8em;
     width: 50%!important;
     padding: 40px!important;
+}
+
+.columna-derecha-home p:first-child{
+  margin-top: 30px!important;
 }
 
 .aboutme-data{
@@ -337,6 +341,16 @@ header{
 
 
 }
+
+@media (max-width: 768px) {
+
+.columna-derecha-home p:first-child{
+  margin-top: 0px!important;
+}
+
+}
+
+
 @media (max-width: 568px) {
 
 /* .perfil{
@@ -512,7 +526,7 @@ function toggleMenu() {
                     </div>
                       
                     <div class="column columna-derecha-home">
-                        <p style="font-size: 0.7em; line-height: 1.5em; margin: 0 0 10px 0;">Passionate about learning and applying new technologies that are constantly emerging and evolving. 
+                        <p style="font-size: 0.7em; line-height: 1.5em; margin: 0px 0 10px 0;">Passionate about learning and applying new technologies that are constantly emerging and evolving. 
                         <p style="font-size: 0.7em; line-height: 1.5em; margin: 10px 0;">Highly motivated to take on new challenges and responsibilities. </p>
                         <p style="font-size: 0.7em; line-height: 1.5em; margin: 10px 0;">Currently, I am transitioning my career focus towards the Data Science and Analytics sector.</p><br>
                         <p><i><b>Data analytics</b></i></p>
