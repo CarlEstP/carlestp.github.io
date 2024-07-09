@@ -443,7 +443,7 @@ nav a[rel='external'] em,
 .shadow {
   position: relative;
 }
-.shadow:before,
+/* .shadow:before,
 .shadow:after {
   bottom: 1.6rem;
   content: '';
@@ -462,7 +462,7 @@ nav a[rel='external'] em,
   left: 2.4rem;
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
-}
+} */
 
 /*=== 1.1 WRAP/CONTAINER === */
 .wrap,
