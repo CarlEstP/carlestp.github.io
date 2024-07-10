@@ -109,10 +109,22 @@ line-height: 24px;
   width: 350px;
 }
 
+#slide-one-container .columna-izquierda-home {
+  padding: 40px!important;
+  padding-right: 0px!important ;
+}
+
 .columna-derecha-home{
-  font-size: 1.8em;
     width: 50%!important;
     padding: 40px!important;
+    padding-left: 0px!important;
+
+}
+
+.columna-derecha-home p{
+    font-size: 1.2em; 
+    line-height: 1.5em;
+    padding: 0 40px;
 }
 
 .columna-derecha-home p:first-child{
@@ -344,8 +356,22 @@ header{
 
 @media (max-width: 768px) {
 
+
+#slide-one-container .columna-izquierda-home {
+  padding: 40px!important;
+}
+
+#slide-one-container .columna-derecha-home {
+  padding: 40px!important;
+}
+
 .columna-derecha-home p:first-child{
   margin-top: 0px!important;
+}
+
+.columna-derecha-home p{
+  padding: initial;
+  margin: 10px auto;
 }
 
 }
@@ -362,9 +388,14 @@ html nav{
   font-size: 0.6em;
 }
 
-.columna-derecha-home{
-  padding: 0px 20px !important;
+#slide-one-container .columna-izquierda-home {
+  padding-bottom: 20px!important;
 }
+
+#slide-one-container .columna-derecha-home {
+  padding-top: 20px!important;
+}
+
 
 .logo a {
   float: initial;
@@ -431,14 +462,9 @@ header nav ul {
   font-size: 0.5em;
 }
 
-.shadow p {
-  padding: 0;
-  margin: 0;
-}
 
 #section-4 .column {
-padding: 0 20px;
-
+  padding: 0 20px;
 }
 
 .project-grid{
@@ -519,16 +545,16 @@ function toggleMenu() {
           <div id='slide-one-container' class="wrap size-80 aligncenter">
               <div class="bg-white shadow" style="border-radius: 100px; padding: 0 0 40px 0;" >
                   <div class="grid vertical-align">
-                    <div class="column">
+                    <div class="column columna-izquierda-home">
                         <div class='perfil'>
                           <img src="images/perfil.png"></img>
                         </div>
                     </div>
                       
                     <div class="column columna-derecha-home">
-                        <p style="font-size: 0.7em; line-height: 1.5em; margin: 0px 0 10px 0;">Passionate about learning and applying new technologies that are constantly emerging and evolving. 
-                        <p style="font-size: 0.7em; line-height: 1.5em; margin: 10px 0;">Highly motivated to take on new challenges and responsibilities. </p>
-                        <p style="font-size: 0.7em; line-height: 1.5em; margin: 10px 0;">Currently, I am transitioning my career focus towards the Data Science and Analytics sector.</p><br>
+                        <p>Passionate about learning and applying new technologies that are constantly emerging and evolving. 
+                        <p>Highly motivated to take on new challenges and responsibilities. </p>
+                        <p>Currently, I am transitioning my career focus towards the Data Science and Analytics sector.</p><br>
                         <p><i><b>Data analytics</b></i></p>
                         <p><i><b>Web development</b></i></p>
                         <p><i><b>Computer engineering</b></i></p>
