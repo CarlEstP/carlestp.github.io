@@ -199,10 +199,9 @@ line-height: 24px;
 
 .project-one{
   display: grid;
-  grid-template-columns: 21% 77%;
-  grid-gap: 20px;
-  /* align-items: center; */
-  justify-items: center;
+  grid-template-columns: 20% 77%;
+  grid-gap: 30px;
+  justify-items: normal;
   font-size: 1em;
 }
 
@@ -241,6 +240,22 @@ line-height: 24px;
   line-height: 24px;
 }
 
+.goto-github-container-desktop{
+  display: block;
+}
+
+.goto-github-container-mobile{
+  display: none;
+}
+
+.goto-github{
+  display: flex;
+}
+
+.goto-github p{
+  margin: 0 10px 0 0;
+}
+
 .project-one-columna-de-images{
   display: flex;
   align-items: stretch;
@@ -248,8 +263,8 @@ line-height: 24px;
 }
 
 .project-one-columna-de img{
-  max-height: 300px;
-  max-width: 300px;
+  max-height: 280px;
+  max-width: 280px;
 }
 
 .social-media img{
@@ -291,6 +306,7 @@ header{
 .project-one{
   display: grid;
   grid-template-columns: none;
+  grid-gap: 0px;
 }
 
 
@@ -495,9 +511,23 @@ header nav ul {
   font-size: 0.8em;
 }
 
+.project-one-columna-de img{
+  max-width: 250px;
+}
+
 .aboutme-data{
   font-size: 0.8em;
 }
+
+.goto-github-container-desktop{
+  display: none;
+}
+
+.goto-github-container-mobile{
+  display: block;
+  margin: 30px 0 0 10px;
+}
+
 
 }
 
@@ -747,7 +777,7 @@ function toggleMenu() {
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
           <div id='slide-six-container' class="wrap size-80 aligncenter">
               <div class="bg-white shadow">
-                <h4 style="margin:10px 0;"><b>Bank case study</b></h4>
+                <h4 style="margin:10px 0 20px 0;"><b>Bank case study</b></h4>
                 <div class="project-one">
                     <div class="project-one-columna-iz">
                       <div>
@@ -776,12 +806,14 @@ function toggleMenu() {
                       <hr style="margin: 10px 0;">
                       <div>
                         <p ><b>Context and scenario:</b></p>
-                        <p>To analyze datasets from campaigns of a Portuguese banking institution. The objective is to determine whether the term deposit product will be subscribed to or not, and draw conclusions from it.</p>
+                        <p>Analize a portuguese bank dataset and determine whether their long term deposit product will be subscribed to or not, and draw conclusions from it</p>
                       </div>
-                      <hr style="margin: 10px 0;">
-                      <div style="border-radius: 20px; width: 80%; margin: 0px auto;">
-                        <p style='margin: 5px 20px 0 20px; text-align: center;'><b>Full project at Github:</b></p>
-                        <a href="https://github.com/CarlEstP" target='_blank'><img style="max-width: 40px; margin: 10px auto; display: block; padding-bottom: 10px;" src="images/github-icon.webp"></a>
+                      <div class="goto-github-container-desktop">
+                        <hr style="margin: 10px 0;">
+                        <div class="goto-github">
+                          <p style="line-height: 40px;"><b>Full project at Github</b></p>
+                          <a href="https://github.com/CarlEstP/bank_case_study" target='_blank'><img style="max-width: 40px;" src="images/github-icon.webp"></a>
+                        </div>
                       </div>
                     </div>
                   <div class="project-one-columna-de">
@@ -790,7 +822,7 @@ function toggleMenu() {
                         <img src="images/bank-detail2.PNG" alt="Sample photo">
                         <img src="images/bank-detail3.PNG" alt="Sample photo">
                     </div>
-                    <hr style="margin: 10px 0;">
+                    <hr style="margin: 20px 0;">
                     <div>
                       <p style="text-align: left; margin: 0 0 10px 10px;"><b>Conclusions after analyzing the dataset:</b></p>
                       <ul style="list-style: disc; text-align: left;">
@@ -803,6 +835,13 @@ function toggleMenu() {
                         <li>People who subscribed in the previous campaign have a high rate of non-subscriptions in this one.</li>
                       </ul>    
                     </div>
+                    <div class="goto-github-container-mobile">
+                      <hr style="margin: 10px 0;">
+                      <div class="goto-github">
+                        <p style="line-height: 40px;"><b>Full project at Github</b></p>
+                        <a href="https://github.com/CarlEstP/bank_case_study" target='_blank'><img style="max-width: 40px;" src="images/github-icon.webp"></a>
+                      </div>
+                    </div>
                 </div>
             </div>
           </div>
@@ -812,7 +851,7 @@ function toggleMenu() {
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
           <div id='slide-seven-container' class="wrap size-80 aligncenter">
               <div class="bg-white shadow">
-                <h4 style="margin:10px 0;"><b>Your perfect room mate</b></h4>
+                <h4 style="margin:10px 0 20px 0;"><b>Your perfect room mate</b></h4>
                 <div class="project-one">
                     <div class="project-one-columna-iz">
                       <div>
@@ -843,10 +882,12 @@ function toggleMenu() {
                         <p ><b>Context and scenario:</b></p>
                         <p>Analyze and determine which roommate is suitable from among 12,000 possible candidates based on their responses to 17 questions, to share an apartment with multiple rooms where at least one of them is already occupied.</p>
                       </div>
-                      <hr style="margin: 10px 0;">
-                      <div style="border-radius: 20px; width: 80%; margin: 0px auto;">
-                        <p style='margin: 5px 20px 0 20px; text-align: center;'><b>Full project at Github:</b></p>
-                        <a href="https://github.com/CarlEstP" target='_blank'><img style="max-width: 40px; margin: 10px auto; display: block; padding-bottom: 10px;" src="images/github-icon.webp"></a>
+                      <div class="goto-github-container-desktop">
+                        <hr style="margin: 10px 0;">
+                        <div class="goto-github">
+                          <p style="line-height: 40px;"><b>Full project at Github</b></p>
+                          <a href="https://github.com/CarlEstP/app_inquilino_ideal" target='_blank'><img style="max-width: 40px;" src="images/github-icon.webp"></a>
+                        </div>
                       </div>
                     </div>
                   <div class="project-one-columna-de">
@@ -855,7 +896,7 @@ function toggleMenu() {
                         <img src="images/inquilino-detail2.PNG" alt="Sample photo">
                         <img src="images/inquilino-detail3.PNG" alt="Sample photo">
                     </div>
-                    <hr style="margin: 10px 0;">
+                    <hr style="margin: 20px 0;">
                     <div>
                       <p style="text-align: left; margin: 0 0 10px 10px;"><b>App logic description:</b></p>
                       <ul style="list-style: disc; text-align: left;">
@@ -864,6 +905,13 @@ function toggleMenu() {
                         <li>Execute the function 'find compatible occupants', utilizing the OneHotEncoder library and calculating the similarity matrix with dot product. Subsequently, define the target range and create the new dataframe with Pandas.</li>
                         <li>Show the compatible occupants in a compatibility chart, and display the similarity data in a table reflecting the 17 questions.</li>
                       </ul>    
+                    </div>
+                    <div class="goto-github-container-mobile">
+                      <hr style="margin: 10px 0;">
+                      <div class="goto-github">
+                        <p style="line-height: 40px;"><b>Full project at Github</b></p>
+                        <a href="https://github.com/CarlEstP/app_inquilino_ideal" target='_blank'><img style="max-width: 40px;" src="images/github-icon.webp"></a>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -874,7 +922,7 @@ function toggleMenu() {
           <span class="background" style="background-image:url('images/wallpaper8.png'); opacity: 0.2;"></span>
           <div id='slide-eight-container' class="wrap size-80 aligncenter">
               <div class="bg-white shadow">
-                <h4 style="margin:10px 0;"><b>Work attendance</b></h4>
+                <h4 style="margin:10px 0 20px 0;"><b>Work attendance</b></h4>
                 <div class="project-one">
                     <div class="project-one-columna-iz">
                       <div>
@@ -904,18 +952,21 @@ function toggleMenu() {
                         <p ><b>Context and scenario:</b></p>
                         <p>We received a dataset containing information about the work attendance of all employees. The company would like to analyze trends, scale, and significance during the year calendar</p>
                       </div>
-                      <hr style="margin: 10px 0;">
-                      <div style="border-radius: 20px; width: 80%; margin: 0px auto;">
-                        <p style='margin: 5px 20px 0 20px; text-align: center;'><b>Full project at Github:</b></p>
-                        <a href="https://github.com/CarlEstP" target='_blank'><img style="max-width: 40px; margin: 10px auto; display: block; padding-bottom: 10px;" src="images/github-icon.webp"></a>
+                      <div class="goto-github-container-desktop">
+                        <hr style="margin: 10px 0;">
+                        <div class="goto-github">
+                          <p style="line-height: 40px;"><b>Full project at Github</b></p>
+                          <a href="https://github.com/CarlEstP/attendance_work" target='_blank'><img style="max-width: 40px;" src="images/github-icon.webp"></a>
+                        </div>
                       </div>
                     </div>
                   <div class="project-one-columna-de">
                     <div class="project-one-columna-de-images">
                       <img src="images/attendance1.PNG" alt="Sample photo">
                       <img src="images/attendance2.PNG" alt="Sample photo">
+                      <img src="images/attendance3.PNG" alt="Sample photo">
                     </div>
-                    <hr style="margin: 10px 0;">
+                    <hr style="margin: 20px 0;">
                     <div>
                       <p style="text-align: left; margin: 0 0 10px 10px;"><b>Conclusions after analyzing the dataset:</b></p>
                       <ul style="list-style: disc; text-align: left;">
@@ -924,6 +975,13 @@ function toggleMenu() {
                         <li>The employee sick leave increases as summer approaches.</li>
                         <li>Employees prefers remote work on friday, followed by monday, and then the rest of the days</li>
                       </ul>    
+                    </div>
+                    <div class="goto-github-container-mobile">
+                      <hr style="margin: 10px 0;">
+                      <div class="goto-github">
+                        <p style="line-height: 40px;"><b>Full project at Github</b></p>
+                        <a href="https://github.com/CarlEstP/attendance_work" target='_blank'><img style="max-width: 40px;" src="images/github-icon.webp"></a>
+                      </div>
                     </div>
                 </div>
             </div>
