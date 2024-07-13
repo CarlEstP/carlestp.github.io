@@ -213,6 +213,36 @@ line-height: 24px;
   font-size: 14px;
 }
 
+.project-top{
+  display: flex;
+  align-items: center;
+}
+
+.project-top-img{
+  width: 75%;
+}
+
+.project-top-bullets{
+  width: 24%; 
+  margin: 0px auto;
+}
+
+.project-top-bullets ul{
+  list-style: disc
+}
+
+.project-top-bullets ul li{
+  font-size: 24px; 
+  line-height: 22px;
+}
+
+.project-top-bullets ul li span{
+  color: initial; 
+  margin-left: -70%; 
+  font-size: 12px; 
+  vertical-align: middle;
+}
+
 .project-one-columna-iz{
   padding: 10px;
   text-align: left;
@@ -515,6 +545,16 @@ header nav ul {
   max-width: 250px;
 }
 
+.project-top-bullets {
+  width: 20%;
+  margin-left: 0;
+}
+
+.project-top-bullets ul li span{
+  font-size: 8px; 
+  margin-left: -80%;
+}
+
 .aboutme-data{
   font-size: 0.8em;
 }
@@ -636,7 +676,7 @@ function toggleMenu() {
                   </div>
                   <div class="aboutme-data" style="margin-top: -20px;">
                     <p><b>(2005 - 2012) BACHELOR'S DEGREE IN COMPUTER ENGINEERING</b></p>
-                    <p><span>Escola Universitària de Informàtica (EUI, UAB). Sabadell, Barcelona</span></p><hr>
+                    <p><span>Escola Universitària d'Informàtica de Sabadell (EUIS-UAB). Sabadell, Barcelona</span></p><hr>
                   </div>
                   <div class="aboutme-data" style="margin-top: -20px;">
                     <p><b>(2002 - 2004) HIGHER TECHNICIAN IN COMPUTER APPLICATION DEVELOPMENT</b></p>
@@ -658,7 +698,7 @@ function toggleMenu() {
                 <div class="aboutme-data">
                   <p><strong>(2018 - 2024) SECURITAS SEGURIDAD (Amazon and Puig)</strong><span style="margin: 0 0 0 10px;"><i><strong>Shift Supervisor – Team Leader</strong></i></p></span>
                   <ul style="list-style: disc; text-align: left;">
-                    <li>Team coordination and incident managemen</li>
+                    <li>Team coordination and incident management</li>
                     <li>Supervision of cameras, access points, and alarms</li>
                   </ul>    
                   <hr>
@@ -674,7 +714,7 @@ function toggleMenu() {
                 <div class="aboutme-data" style="margin-top: -20px;">
                   <p><strong>(2017 - 2013) RG PUBLICITAT & EDICIONS (Hewlett-Packard)</strong><span style="margin: 0 0 0 10px;"><i><strong>Graphic designer – Print Testing</strong></i></p></span>
                   <ul style="list-style: disc; text-align: left;">
-                    <li>Layout design, processing, and digital printing on Onix Production House and Caldera platfoms</li>
+                    <li>Layout design, processing, and digital printing on Onix Production House and Caldera platforms</li>
                     <li>Quality control, performance analysis, and consumption metrics. Large format printing</li>
                   </ul>
                   <hr>
@@ -745,25 +785,72 @@ function toggleMenu() {
             <h4><b>My projects</b></h4><hr style="margin: 20px 0;">
             <div class="project-grid">
               <article style="border-radius: 100px; overflow: auto;">
-                <img src="images/bank2.PNG" alt="Sample photo">
+                
+                <div class="project-top"> 
+                  <div class="project-top-img">
+                    <img src="images/bank2.PNG" alt="Bank case study main image">
+                  </div>
+                  <div class="project-top-bullets">
+                    <ul>
+                      <li style="color:red;"><span>Python</span></li>
+                      <li style="color:blue;"><span>Pandas</span></li>
+                      <li style="color:brown;"><span>Numpy</span></li>
+                      <li style="color:green;"><span>Seaborn</span></li>
+                      <li style="color:green;"><span>Plotly</span></li>
+                    </ul>
+                  </div>
+                </div>
+
                 <div class="text">
-                  <h5 style="margin: 10px 0;">Bank case study</h5>
-                  <p style="margin-bottom:10px">Comprehensive analysis of various campaigns conducted by a Portuguese bank to evaluate subscription rates for a specific long-term product</p>
+                  <h5 style="margin: 10px 0;">Bank Case Study</h5>
+                  <p style="margin-bottom:10px">Comprehensive analysis of various campaigns conducted by a Portuguese bank to evaluate subscription rates for a specific long-term product.</p>
                   <a href="#slide=6">More details</a>
                 </div>
               </article>
+
+
               <article style="border-radius: 100px; overflow: auto;">
-                <img src="images/inquilino.PNG" alt="Sample photo">
+
+                <div class="project-top"> 
+                  <div class="project-top-img">
+                    <img src="images/inquilino.PNG" alt="Find your perfect roomate main image">
+                  </div>
+                  <div class="project-top-bullets">
+                    <ul>
+                      <li style="color:darkgray;"><span>Scikit</span></li>
+                      <li style="color:coral;"><span>Streamlit</span></li>
+                      <li style="color:red;"><span>Python</span></li>
+                      <li style="color:blue;"><span>Pandas</span></li>
+                      <li style="color:green;"><span>Seaborn</span></li>
+                    </ul>
+                  </div>
+                </div>
+
                 <div class="text">
-                  <h5 style="margin: 10px 0;">Your perfect roommate</h5>
-                  <p style="margin-bottom:10px">Web application that utilizes machine learning to help find your ideal roommate based on your personal preferences.</p>
+                  <h5 style="margin: 10px 0;">Find Your Perfect Roommate</h5>
+                  <p style="margin-bottom:10px">Development of a web application using predictive analysis to assist in finding your ideal roommate based on your personal preferences</p>
                   <a href="#slide=7">More details</a>
                 </div>
               </article>
+
+
               <article style="border-radius: 100px; overflow: auto;">
-                <img src="images/attendance.PNG" alt="Sample photo">
+
+                <div class="project-top"> 
+                  <div class="project-top-img">
+                    <img src="images/attendance.PNG" alt="Work Attendance analysis main image">
+                  </div>
+                  <div class="project-top-bullets">
+                    <ul>
+                      <li style="color:cyan"><span>Excel</span></li>
+                      <li style="color:silver"><span>P. Query</span></li>
+                      <li style="color:yellow"><span>PowerBI</span></li>
+                    </ul>
+                  </div>
+                </div>
+
                 <div class="text">
-                  <h5 style="margin: 10px 0;">Work attendance</h5>
+                  <h5 style="margin: 10px 0;">Work Attendance Analysis</h5>
                   <p style="margin-bottom:10px">Analyze a dataset from an IT company to determine employees' working preferences (remote work or office) and their attendance patterns.</p>
                   <a href="#slide=8">More details</a>
                 </div>
@@ -781,7 +868,7 @@ function toggleMenu() {
                 <div class="project-one">
                     <div class="project-one-columna-iz">
                       <div>
-                        <p style="text-align:left; font-size: 10px; margin-bottom: 10px;"><i>* Based on the guided challenge from thePower Data & Analytics</i>
+                        <p style="text-align:left; font-size: 10px; margin-bottom: 10px;"><i>* Based on the guided challenge from thePower Data & Analytics.</i>
                       </div>
                       <hr style="margin: 10px 0;">
                       <div>
@@ -806,7 +893,7 @@ function toggleMenu() {
                       <hr style="margin: 10px 0;">
                       <div>
                         <p ><b>Context and scenario:</b></p>
-                        <p>Analize a portuguese bank dataset and determine whether their long term deposit product will be subscribed to or not, and draw conclusions from it</p>
+                        <p>Analize a portuguese bank dataset and determine whether their long term deposit product will be subscribed to or not, and draw conclusions from it.</p>
                       </div>
                       <div class="goto-github-container-desktop">
                         <hr style="margin: 10px 0;">
