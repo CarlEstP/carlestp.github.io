@@ -155,7 +155,7 @@ line-height: 24px;
 
 .project-grid { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 40px;
   align-items: stretch;
   font-size: 1em;
@@ -203,9 +203,6 @@ line-height: 24px;
   grid-gap: 30px;
   justify-items: normal;
   font-size: 1em;
-}
-
-.project-one p{
 }
 
 .project-one li {
@@ -384,7 +381,7 @@ header{
 }
 
 #mobile-menu-icon{
-  float: right;
+  /* float: right; */
   display: inline-block;
   margin: 20px;
 }
@@ -1008,10 +1005,10 @@ function toggleMenu() {
                     <div>
                       <p style="text-align: left; margin: 0 0 10px 10px;"><b>App logic description:</b></p>
                       <ul style="list-style: disc; text-align: left;">
-                        <li>Launch the app from app.py, generating the frontend using streamlit.</li>
-                        <li>Access the functions.py file to reformat the actual occupants identifiers entered in the form.</li>
-                        <li>Execute the function 'find compatible occupants', utilizing the OneHotEncoder library and calculating the similarity matrix with dot product. Subsequently, define the target range and create the new dataframe with Pandas.</li>
-                        <li>Show the compatible occupants in a compatibility chart, and display the similarity data in a table reflecting the 17 questions.</li>
+                        <li>Launch the Application: Start the app using app.py, which generates the frontend with Streamlit.</li>
+                        <li>Reformat Identifiers: Access functions.py to reformat the identifiers of the actual occupants entered in the form.</li>
+                        <li>Find Compatible Occupants: Execute the find_compatible_occupants function using the OneHotEncoder library. Calculate the similarity matrix with a dot product, define the target range, and create a new DataFrame with Pandas.</li>
+                        <li>Display Compatibility Data: Present the compatible occupants in a compatibility chart and display the similarity data in a table, reflecting responses to the 17 questions.</li>
                       </ul>    
                     </div>
                     <div class="goto-github-container-mobile">
